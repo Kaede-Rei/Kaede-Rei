@@ -54,12 +54,12 @@
 
 ## 🚧 Featured Projects
 
-| Project | Application | Stack | What I Did |
+| Project | Application | Stack | Description |
 |--------|-------------|-------|------------|
-| 🦾 Tomato Picking Robot | Precision Agriculture | STM32 + ROS + MoveIt + Vision | 机械臂底层驱动、运动学解算、ROS 控制链路 |
-| 🐦 Pigeon Cage Feeding Automation | Livestock Automation | MCU + RTOS | 自动换料系统设计，从裸机重构至 RTOS |
-| 🚗 Wheel-Rail Integrated Chassis | Agricultural Mobility Platform | Motor Driver + SDK | 舵轮控制、底盘运动学、通信协议设计 |
-| 🤝 Dual-Arm IL + RL System | Agricultural Manipulation Research | LeRobot + PyTorch + ROS2 | 面向真实机械臂的 IL + RL 协同策略 |
+| 🦾 番茄采摘机器人 | 精准农业 | STM32 + ROS + MoveIt | 机械臂底层驱动、运动学解算、ROS 控制链路，面向精准农业操作 |
+| 🐦 鸽笼自动换料系统 | 畜牧自动化 | MCU + RTOS | 自动换料系统设计，从裸机重构至 RTOS，实现稳定可靠的饲料管理 |
+| 🚗 舵轮轮轨一体底盘 | 农业移动平台 | 电机驱动 + SDK | 舵轮控制、底盘运动学与通信协议设计，实现复杂地形下的移动能力 |
+| 🤝 双臂 IL + RL 协同系统 | 农业机械臂协作研究 | LeRobot + ROS2 | 面向真实机械臂的模仿学习与强化学习协同策略研究与部署 |
 
 ---
 
@@ -74,7 +74,7 @@
 ## 🧠 Current Focus
 
 ```text
-✔ 机械臂控制栈（驱动 → MoveIt → IL-RL Policy）
-✔ ROS2 系统工程化
+✔ 嵌入式软件开发
+✔ 机械臂控制栈（底层电机驱动 → ROS MoveIt → 对接感知与决策系统）
+✔ 基于 LeRobot 的具身智能（IL + RL）
 ✔ 农业场景下的机器人操作与自动化系统
-✔ Embodied AI for Real Robot

@@ -34,10 +34,10 @@
 ![Integration](https://img.shields.io/badge/-System%20Integration-1F2D3A?style=flat-square)
 
 > Still Learning... </br>
+>
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 ![Debug](https://img.shields.io/badge/-Circuit%20Debug-00979D?style=flat-square)
->
 
 ---
 

@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Kaede Rei
 
-🎓 **华南农业大学 (SCAU) 本科生** | 🌾 **广东省农科院 (GAAS) 项目合作成员** <\br>
+🎓 **华南农业大学 (SCAU) 本科生** | 🌾 **广东省农科院 (GAAS) 项目合作成员** </br>
 Aspiring 💻 **Embedded Software Engineer** | 🤖 **Agri-Robotics Developer** | 🧠 **Embodied AI Explorer**
 
 专注于 **嵌入式系统 / 六轴机械臂 / ROS / 具身智能 (IL + RL)**

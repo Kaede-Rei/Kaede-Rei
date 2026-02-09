@@ -27,16 +27,16 @@
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
 ![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-E7352C?style=flat-square)
 
-### 🔹 HMI & Tools
-![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
-![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
-
 ### 🔹 Hardware & Electronics
 ![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)
 ![Motor](https://img.shields.io/badge/-Motor%20Drive-FF6F00?style=flat-square)
 ![Debug](https://img.shields.io/badge/-Circuit%20Debug-00979D?style=flat-square)
 ![Vision](https://img.shields.io/badge/-Embedded%20Vision-5C3EE8?style=flat-square)
 ![Integration](https://img.shields.io/badge/-System%20Integration-1F2D3A?style=flat-square)
+
+### 🔹 HMI & Tools
+![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
+![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 
 ---
 

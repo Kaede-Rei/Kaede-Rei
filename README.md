@@ -66,7 +66,15 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献图" style="width: 100%;"/>
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+      <img alt="rzashakeri's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
+    </a>
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+        <img alt="rzashakeri's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000&icon_color=000" height="192px"/>
+    </a>
+</div>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献图" style="width: 80%;"/>
 </div>
 
 ---
@@ -78,3 +86,4 @@
 ✔ 机械臂控制栈（底层电机驱动 → ROS MoveIt → 对接感知与决策系统）
 ✔ 基于 LeRobot 的具身智能（IL + RL）
 ✔ 农业场景下的机器人操作与自动化系统
+```

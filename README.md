@@ -16,7 +16,6 @@
 ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square)
 ![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
-![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
 ![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
 
 ### 🔹 Robotics & Control
@@ -35,6 +34,7 @@
 
 > Still Learning... </br>
 >
+![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 ![Debug](https://img.shields.io/badge/-Circuit%20Debug-00979D?style=flat-square)

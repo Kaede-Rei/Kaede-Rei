@@ -11,6 +11,7 @@
 
 ### 🔹 Embedded & Firmware
 ![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white)
+![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![RTOS](https://img.shields.io/badge/-RTOS-FF6F00?style=flat-square)
 ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square)
@@ -29,7 +30,6 @@
 ### 🔹 HMI & Tools
 ![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
-![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 
 ### 🔹 Hardware & Electronics
 ![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)

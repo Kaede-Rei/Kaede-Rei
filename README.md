@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Kaede-Rei
+# 👋 Hi, I'm Kaede Rei
 
 💻 **Embedded Software Engineer** | 🤖 **Robotics Developer** | 🧠 **Embodied AI Explorer**  
 
@@ -20,15 +20,15 @@
 
 ### 🔹 Robotics & Control
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![ROS](https://img.shields.io/badge/-ROS1/2-22314E?style=flat-square&logo=ros)
-![MoveIt](https://img.shields.io/badge/-MoveIt-FF6F00?style=flat-square)
+![MoveIt](https://img.shields.io/badge/-MoveIt1/2-FF6F00?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
-![LeRobot](https://img.shields.io/badge/-LeRobot-000000?style=flat-square)
+![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-000000?style=flat-square)
 
 ### 🔹 HMI & Tools
 ![LVGL](https://img.shields.io/badge/-LVGL-2C3E50?style=flat-square)
-![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt)
+![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 
 ### 🔹 Hardware
@@ -60,8 +60,7 @@ PCB Design · 电路调试 · 多机通信 · 电机驱动 · 嵌入式视觉
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kaede-Rei&show_icons=true&theme=tokyonight&count_private=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaede-Rei&layout=compact&theme=tokyonight" width="48%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献图" style="width: 100%;"/>
 </div>
 
 ---

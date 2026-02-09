@@ -78,5 +78,3 @@
 ✔ ROS2 系统工程化
 ✔ 农业场景下的机器人操作与自动化系统
 ✔ Embodied AI for Real Robot
-
----

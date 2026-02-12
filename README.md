@@ -10,31 +10,30 @@ Aspiring 💻 Embedded Software Engineer | 🤖 Agri-Robotics Developer | 🧠 E
 
 ## 🧩 Tech Stack
 
-### 🔹 Embedded & Firmware
+### 🔹 Programming Languages
 ![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![RTOS](https://img.shields.io/badge/-RTOS-FF6F00?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+### 🔹 Embedded Systems
 ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square)
 ![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
+![RTOS](https://img.shields.io/badge/-RTOS-FF6F00?style=flat-square)
 ![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
+![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)
+![Motor](https://img.shields.io/badge/-Motor%20Drive-FF6F00?style=flat-square)
 
 ### 🔹 Robotics & Control
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![ROS](https://img.shields.io/badge/-ROS1/2-22314E?style=flat-square&logo=ros)
 ![MoveIt](https://img.shields.io/badge/-MoveIt1/2-FF6F00?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
 ![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-E7352C?style=flat-square)
-
-### 🔹 Hardware & Electronics
-![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)
-![Motor](https://img.shields.io/badge/-Motor%20Drive-FF6F00?style=flat-square)
 ![Vision](https://img.shields.io/badge/-Embedded%20Vision-5C3EE8?style=flat-square)
 ![Integration](https://img.shields.io/badge/-System%20Integration-1F2D3A?style=flat-square)
 
-> Still Learning... </br>
->
+### ⏳ Still Learning...
 ![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)

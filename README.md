@@ -1,10 +1,12 @@
 # 👋 Hi, I'm Kaede Rei
 
-🎓 **华南农业大学 (SCAU) 本科生** | 🌾 **广东省农科院 (GAAS) 项目合作成员** </br>
+[中文](README_zh.md) | **English**
+
+🎓 **Undergraduate at South China Agricultural University (SCAU)** | 🌾 **Project Collaborator at Guangdong Academy of Agricultural Sciences (GAAS)** </br>
 Aspiring 💻 Embedded Software Engineer | 🤖 Agri-Robotics Developer | 🧠 Embodied AI Explorer
 
-专注于 **嵌入式系统 / 六轴机械臂 / ROS / 具身智能 (IL + RL)**
-面向农业自动化场景，从「底层驱动 + 运动控制 + ROS 系统集成 + 学习型策略」构建机器人机械臂电控与具身智能控制系统
+Focusing on **Embedded Systems / 6-axis Manipulators / ROS / Embodied AI (IL + RL)**
+Building robotic arm electronic control and embodied intelligence systems for agricultural automation—from "Bottom-level Drivers + Motion Control + ROS Integration" to "Learning-based Strategies."
 
 ---
 
@@ -42,11 +44,11 @@ Aspiring 💻 Embedded Software Engineer | 🤖 Agri-Robotics Developer | 🧠 E
 
 ## 📌 About Me
 
-- 🤖 **系统视角**：专注于**机器人开发**，熟悉从**底层嵌入式驱动**到**上层 ROS 系统**的全流程技术链路。
-- 🔧 **工程落地**：主导机械臂**电控系统**搭建，涵盖电机驱动、运动学解算与轨迹规划，并负责电控与视觉、导航系统间的 ROS 通信集成。
-- 🧠 **智能算法**：致力于**具身智能**在真实硬件上的部署，基于 LeRobot 框架探索 IL/RL 算法在农业机械臂操控中的应用与优化。
-- 🌱 **技术深耕**：正在深入研究 **Rust** 在嵌入式开发中的安全性应用，以及基于 **QT** 实现易于操作的智能农业机械人机交互界面。
-- 🌾 **行业聚焦**：聚焦**农业机器人**，关注非结构化环境下的设备可靠性、实时性与长期运行稳定性。
+- 🤖 **Systems Perspective**: Dedicated to **Robotics Development**, experienced in the full technical chain from **bottom-level embedded drivers** to **high-level ROS systems**.
+- 🔧 **Engineering Implementation**: Leading the construction of robotic arm **electronic control systems**, covering motor drivers, kinematics solving, and trajectory planning, while managing ROS communication integration between control, vision, and navigation systems.
+- 🧠 **Intelligent Algorithms**: Committed to deploying **Embodied AI** on real hardware, exploring the application and optimization of IL/RL algorithms in agricultural manipulators based on the LeRobot framework.
+- 🌱 **Deep Technical Exploration**: Currently researching the safety applications of **Rust** in embedded development, and developing intelligent agricultural robot HMI interfaces based on **Qt**.
+- 🌾 **Industry Focus**: Focusing on **Agricultural Robotics**, prioritizing equipment reliability, real-time performance, and long-term stability in unstructured environments.
 
 ---
 
@@ -54,10 +56,10 @@ Aspiring 💻 Embedded Software Engineer | 🤖 Agri-Robotics Developer | 🧠 E
 
 | Project | Application | Stack | Description |
 |--------|-------------|-------|------------|
-| 🦾 番茄采摘机器人 | 精准农业 | STM32 + ROS + MoveIt | 机械臂底层驱动、运动学解算、ROS 控制链路，面向精准农业操作 |
-| 🐦 鸽笼自动换料系统 | 畜牧自动化 | MCU + RTOS | 自动换料系统设计，从裸机重构至 RTOS，实现稳定可靠的饲料管理 |
-| 🚗 舵轮轮轨一体底盘 | 农业移动平台 | 电机驱动 + SDK | 舵轮控制、底盘运动学与通信协议设计，实现复杂地形下的移动能力 |
-| 🤝 双臂 IL + RL 协同系统 | 农业机械臂协作研究 | LeRobot + ROS2 | 面向真实机械臂的模仿学习与强化学习协同策略研究与部署 |
+| 🦾 Tomato Harvesting Robot | Precision Agri | STM32 + ROS + MoveIt | Bottom-level driver, kinematics, and ROS control chain for precision agricultural operations. |
+| 🐦 Pigeon Cage Auto-Feeder | Livestock Auto | MCU + RTOS | System design refactored from bare-metal to RTOS for stable and reliable feed management. |
+| 🚗 Integrated Steer-Rail Chassis | Agri-Mobile Platform | Motor Drive + SDK | Steering control, chassis kinematics, and communication protocol design for complex terrain mobility. |
+| 🤝 Dual-Arm IL + RL System | Collaborative Agri-Arm | LeRobot + ROS2 | Research and deployment of imitation and reinforcement learning strategies for real robotic arms. |
 
 ---
 
@@ -65,15 +67,12 @@ Aspiring 💻 Embedded Software Engineer | 🤖 Agri-Robotics Developer | 🧠 E
 
 <div align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img alt="rzashakeri's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
+      <img alt="Kaede-Rei's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img alt="rzashakeri's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
+        <img alt="Kaede-Rei's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
     </a>
 </div>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献图" style="width: 100%;"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="Contribution Graph" style="width: 100%;"/>
 </div>
-
----
-

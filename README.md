@@ -19,6 +19,7 @@ Building robotic arm electronic control and embodied intelligence systems for ag
 
 ### 🔹 Embedded Systems
 ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square)
+![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
 ![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
 ![RTOS](https://img.shields.io/badge/-RTOS-5C3EE8?style=flat-square)
@@ -35,10 +36,9 @@ Building robotic arm electronic control and embodied intelligence systems for ag
 ![Integration](https://img.shields.io/badge/-System%20Integration-1F2D3A?style=flat-square)
 
 ### ⏳ Still Learning...
-![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
+![Isaac](https://img.shields.io/badge/-NVIDIA%20Isaac-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
-![Debug](https://img.shields.io/badge/-Circuit%20Debug-00979D?style=flat-square)
 
 ---
 
@@ -70,7 +70,7 @@ Building robotic arm electronic control and embodied intelligence systems for ag
       <img alt="Kaede-Rei's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img alt="Kaede-Rei's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
+        <img alt="Kaede-Rei's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000&" height="192px"/>
     </a>
 </div>
 <div align="center">

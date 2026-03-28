@@ -19,6 +19,7 @@
 
 ### 🔹 嵌入式系统
 ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square)
+![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
 ![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
 ![RTOS](https://img.shields.io/badge/-RTOS-5C3EE8?style=flat-square)
@@ -35,10 +36,9 @@
 ![Integration](https://img.shields.io/badge/-System%20Integration-1F2D3A?style=flat-square)
 
 ### ⏳ 持续学习中...
-![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
+![Isaac](https://img.shields.io/badge/-NVIDIA%20Isaac-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
 ![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
-![Debug](https://img.shields.io/badge/-Circuit%20Debug-00979D?style=flat-square)
 
 ---
 

@@ -121,3 +121,4 @@ Current focus areas:
 
 - Blog: https://kaede-rei.github.io/
 - GitHub: https://github.com/Kaede-Rei
+- EMail: kaerei86@gmail.com

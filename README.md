@@ -44,6 +44,7 @@ Current focus areas:
 ![ROS](https://img.shields.io/badge/-ROS1/2-22314E?style=flat-square&logo=ros)
 ![MATLAB](https://img.shields.io/badge/-MATLAB-0076A8?style=flat-square)
 ![MoveIt](https://img.shields.io/badge/-MoveIt1/2-FF6F00?style=flat-square)
+![Pinocchio](https://img.shields.io/badge/-Pinocchio-EE7C21?style=flat-square)
 ![RViz](https://img.shields.io/badge/-RViz-22314E?style=flat-square)
 ![Gazebo](https://img.shields.io/badge/-Gazebo-2C3E50?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
@@ -64,7 +65,7 @@ Current focus areas:
   CAN / SCI / wireless links, communication protocol implementation, multi-device coordination, and hardware bring-up
 
 - **Manipulator Modeling & Motion Solving**  
-  MDH modeling, forward/inverse kinematics, pose reachability handling, and environment-aware planning
+  MDH modeling, forward/inverse kinematics, rigid body dynamics (via Pinocchio), pose reachability handling, and environment-aware planning
 
 - **Control Interfaces & Task Frameworks**  
   Controller abstraction, command dispatching, system interface design, end-effector integration, and task-chain organization

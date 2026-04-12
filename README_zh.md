@@ -44,6 +44,7 @@
 ![ROS](https://img.shields.io/badge/-ROS1/2-22314E?style=flat-square&logo=ros)
 ![MATLAB](https://img.shields.io/badge/-MATLAB-0076A8?style=flat-square)
 ![MoveIt](https://img.shields.io/badge/-MoveIt1/2-FF6F00?style=flat-square)
+![Pinocchio](https://img.shields.io/badge/-Pinocchio-EE7C21?style=flat-square)
 ![RViz](https://img.shields.io/badge/-RViz-22314E?style=flat-square)
 ![Gazebo](https://img.shields.io/badge/-Gazebo-2C3E50?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
@@ -65,7 +66,7 @@
   CAN / SCI / 无线链路，通信协议实现，多机协同联动，硬件链路联调
 
 - **机械臂建模与运动求解**  
-  MDH 建模，正/逆运动学，位姿可达性处理，环境感知规划
+  MDH 建模，正/逆运动学，刚体动力学（通过Pinocchio），位姿可达性处理，环境感知规划
 
 - **控制接口与任务框架**  
   控制器抽象，命令分发，系统接口设计，末端执行器集成，任务链组织

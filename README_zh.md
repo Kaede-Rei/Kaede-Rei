@@ -48,12 +48,12 @@
 ![RViz](https://img.shields.io/badge/-RViz-22314E?style=flat-square)
 ![Gazebo](https://img.shields.io/badge/-Gazebo-2C3E50?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv)
+![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 ![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-E7352C?style=flat-square)
 
 
 ### ⏳ 持续学习中...
 ![Isaac](https://img.shields.io/badge/-NVIDIA%20Isaac-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
 
 ---
 

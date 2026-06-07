@@ -4,7 +4,7 @@
 
 > SCAU Undergraduate | Agri-Robotics Developer | AgroTech-SCAU Lead
 
-> Focused on **Embedded Control**, **Robotic Arm Motion Control**, and **Agricultural Robot System Integration**.
+> Focusing on **Embedded Control**, **Robotic Arm Motion Control**, and **Agricultural Robot System Integration**.
 
 I am an undergraduate student at South China Agricultural University, working on agricultural robotics systems that connect embedded control, robotic arms, perception, ROS, and real-world deployment.
 

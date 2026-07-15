@@ -17,92 +17,99 @@ Currently, I am one of the main leads of [AgroTech-SCAU](https://github.com/Agro
 
 ---
 
-## 🚀 What I Am Building
+## 🔬 Current Research
 
-I am mainly working on **field-oriented agricultural robot systems**, including:
-
-* robotic arm control for greenhouse manipulation
-* embedded control systems for chassis and actuators
-* ROS / ROS2 based robot software integration
-* RGB-D camera, LiDAR, and perception system deployment
-* imitation learning and embodied manipulation experiments
-* team-level engineering standards for AgroTech-SCAU
-
-My goal is to build robot systems that are not only demos, but also **maintainable, reproducible, and deployable**.
-
----
-
-## 🧭 Current Focus
-
-### 🤖 Agricultural Robotic Manipulation
-
-Building robotic arm systems for greenhouse scenarios such as tomato picking, leaf pushing, RGB-D perception, hand-eye calibration, and task-level execution.
-
-Related projects:
-
-* [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)
-* [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)
-* [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves)
-
----
+My current work focuses on greenhouse mobile manipulation through three connected directions:
 
 ### 🦾 Robotic Arm Motion Control
 
-Developing reusable robotic arm control systems, including hardware interfaces, kinematics, dynamics feedforward, impedance control, and ROS2 control integration.
+Building a self-developed DM robotic arm platform with:
 
-Related projects:
+- ROS 2 control and hardware interfaces
+- kinematics and dynamics
+- gravity compensation
+- impedance and admittance control
+- MoveIt 2 integration
+- safety and fault recovery
 
-* [DM-Arm-Hardware-Interface](https://github.com/Kaede-Rei/DM-Arm-Hardware-Interface)
-* [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)
-* [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)
+### 🍅 Agricultural Manipulation
 
----
+Studying manipulation tasks in greenhouse environments, including:
 
-### 🧠 Embodied AI & Imitation Learning
+- tomato harvesting
+- compliant leaf manipulation
+- active perception
+- base–arm coordination
+- RGB-D perception and hand–eye calibration
 
-Exploring how to combine real robotic arms, teleoperation, dataset collection, and learning-based manipulation.
+### 🧠 Embodied Manipulation
 
-Related project:
+Exploring learning-based robot manipulation through:
 
-* [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)
-
-Current learning directions:
-
-* LeRobot
-* imitation learning
-* dual-arm teleoperation
-* real-robot dataset collection
-* policy training and deployment
-
----
-
-### 🚜 Mobile Robot & Chassis Control
-
-Working on embedded chassis control, steering-wheel chassis, wheel-rail chassis, remote/autonomous mode switching, and safety logic.
-
-Related projects:
-
-* [Steering-Wheel-Chassis](https://github.com/Kaede-Rei/Steering-Wheel-Chassis)
-* [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)
+- dual-arm teleoperation
+- real-robot dataset collection
+- LeRobot and imitation learning
+- Isaac Sim and sim-to-real experiments
+- autonomous leaf manipulation
 
 ---
 
-### 🛠️ Engineering Standards
+## 📌 Project Map
 
-Helping AgroTech-SCAU build reusable engineering standards instead of isolated project code.
+My repositories are organized by their current role in research, engineering development, and knowledge reuse.
 
-Related project:
+### Active Research & Main Platforms
 
-* [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)
+| Project                                                                                                       | Area                      | Current Role                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [DM-Arm-Hardware-Interface](https://github.com/Kaede-Rei/DM-Arm-Hardware-Interface)                           | Robotic Arm Control       | Main ROS 2 platform for DM robotic-arm hardware interfaces, dynamics, and compliant control                      |
+| [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves)                             | Agricultural Manipulation | Leaf-manipulation and active-perception research for greenhouse harvesting                                       |
+| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)                                       | Embodied AI               | Dual-arm teleoperation, real-robot datasets, imitation learning, and policy deployment                           |
+| [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)                                                 | Motion Planning           | MoveIt 2 integration, reachable-pose evaluation, and manipulation task-planning experiments                      |
+| [AgroTech-SCAU/Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)               | Mobile Robot              | Main Atlas chassis repository covering embedded control, MCU–Linux integration, navigation, and autonomous tasks |
+| [AgroTech-SCAU/Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis) | Mobile Robot              | Wheel–rail integrated chassis platform and control prototype                                                     |
 
-This work focuses on:
+### Tools, Standards & Supporting Repositories
 
-* project structure
-* embedded SDK reuse
-* Git / GitHub collaboration
-* development workflow
-* safety debugging rules
-* documentation standards
+| Project                                                                                                                           | Role                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)                                                             | Hand–eye, eye-to-hand, and multi-camera calibration tools                             |
+| [AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection) | Mechanical models and design assets for steering-wheel chassis platforms              |
+| [AgroTech-SCAU/Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)       | Embedded architecture, reusable SDK, communication, safety, and development standards |
+| [AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)         | Reusable ROS and robotic-arm motion-control architecture                              |
+
+<details>
+<summary><strong>Legacy & Engineering References</strong></summary>
+
+<br>
+
+These repositories are retained as historical implementations, migration sources, or engineering references.
+
+| Project                                                                         | Reference Value                                                                                            |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)         | Complete ROS1 tomato-harvesting workflow with MoveIt, RGB-D perception, point clouds, and GUI task control |
+| [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)               | ROS1 DM robotic-arm harvesting implementation and ROS 2 migration reference                                |
+| [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)                   | MCU-side robotic-arm kinematics, CAN motor control, communication, and HFSM reference                      |
+| [Multi-Arm-Controller](https://github.com/Kaede-Rei/Multi-Arm-Controller)       | Multi-arm planning interfaces and reachable-pose search prototype                                          |
+| [Lift-Gripper-Controller](https://github.com/Kaede-Rei/Lift-Gripper-Controller) | Embedded lift and gripper controller with PID, CAN communication, and HFSM                                 |
+| [Steering-Wheel-Chassis](https://github.com/Kaede-Rei/Steering-Wheel-Chassis)   | Earlier personal version of the chassis project; current development has moved to AgroTech-SCAU            |
+| [Visial-Robotic-Arm-Car](https://github.com/Kaede-Rei/Visial-Robotic-Arm-Car)   | Early visual robotic-arm mobile manipulation prototype                                                     |
+| [Embedded-About](https://github.com/Kaede-Rei/Embedded-About)                   | Index and archive of early embedded-system projects                                                        |
+
+</details>
+
+<details>
+<summary><strong>Personal Infrastructure & Other Repositories</strong></summary>
+
+<br>
+
+| Project                                                                 | Role                                                                    |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [Kaede-Rei](https://github.com/Kaede-Rei/Kaede-Rei)                     | GitHub profile README                                                   |
+| [kaede-rei.github.io](https://github.com/Kaede-Rei/kaede-rei.github.io) | Personal website and technical blog                                     |
+| [Resume-Template](https://github.com/Kaede-Rei/Resume-Template)         | Personal résumé and document template                                   |
+
+</details>
 
 ---
 
@@ -151,69 +158,50 @@ This work focuses on:
 
 ---
 
-## 📌 Selected Projects
-
-| Project                                                                                                       | Direction                 | Description                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)                                       | Agricultural Manipulation | ROS Noetic + MoveIt based tomato-picking platform with RGB-D perception and GUI task control.                      |
-| [DM-Arm-Hardware-Interface](https://github.com/Kaede-Rei/DM-Arm-Hardware-Interface)                           | Arm Control               | ROS2 control stack for DM robotic arms, including hardware interface, impedance control, and dynamics feedforward. |
-| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)                                       | Embodied AI               | Dual-arm imitation learning workflow based on LeRobot, teleoperation, dataset collection, and policy inference.    |
-| [Steering-Wheel-Chassis](https://github.com/Kaede-Rei/Steering-Wheel-Chassis)                                 | Chassis Control           | Embedded control project for steering-wheel chassis experiments.                                                   |
-| [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard) | Engineering Standard      | AgroTech-SCAU embedded control standard for project structure, SDK reuse, collaboration, and safety debugging.     |
-| [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)               | Mobile Robot              | Wheel-rail integrated chassis project under AgroTech-SCAU.                                                         |
-
----
-
 ## 🧩 Engineering Philosophy
 
-I care more about complete engineering pipelines than isolated demos.
+I care more about complete and reusable robot systems than isolated demonstrations.
 
 ```text
-real task requirement
-        ↓
-mechanical / electrical / sensor constraints
-        ↓
-embedded driver and safety interface
-        ↓
-motion model and control algorithm
-        ↓
-ROS / middleware integration
-        ↓
-debugging tools and documentation
-        ↓
-real robot deployment
+real task
+    ↓
+hardware and sensor constraints
+    ↓
+embedded control and safety
+    ↓
+motion control and ROS integration
+    ↓
+perception and task coordination
+    ↓
+experiments, documentation and deployment
 ```
 
 I prefer systems that are:
 
-* safe before powerful
-* modular before complex
-* reproducible before flashy
-* maintainable before temporary
-* tested on real hardware, not only in simulation
+- safe before powerful
+- modular before complex
+- reproducible before flashy
+- maintainable before temporary
+- verified on real hardware
 
 ---
 
 ## 🌱 AgroTech-SCAU
 
-At [AgroTech-SCAU](https://github.com/AgroTech-SCAU), I help organize technical development and project collaboration.
+At [AgroTech-SCAU](https://github.com/AgroTech-SCAU), I contribute to:
 
-My main responsibilities include:
+- embedded control architecture
+- robotic arm motion control
+- mobile robot system integration
+- project architecture and engineering standards
+- technical mentoring and knowledge transfer
 
-* electronic control direction
-* robotic arm motion-control direction
-* system integration planning
-* project architecture review
-* engineering standards
-* helping new members build real robot systems
+Representative team projects include:
 
-Current team directions include:
-
-* embedded electronic control standardization
-* steering-wheel chassis and wheel-rail chassis
-* robotic arm motion-control standard
-* agricultural mobile robot integration
-* greenhouse navigation and manipulation
+- [Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)
+- [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)
+- [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)
+- [Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)
 
 ---
 

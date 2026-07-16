@@ -21,36 +21,52 @@ Currently, I am one of the main leads of [AgroTech-SCAU](https://github.com/Agro
 
 My current work focuses on greenhouse mobile manipulation through three connected directions:
 
-### 🦾 Robotic Arm Motion Control
+### ⚙️ Embedded Control & Mobile Platforms
 
-Building a self-developed DM robotic arm platform with:
+Developing MCU-side control systems for mobile chassis, robotic arms, and actuators, including:
 
-- ROS 2 control and hardware interfaces
-- kinematics and dynamics
+- motor and actuator control
+- CAN and serial communication
+- IMU and odometry processing
+- hierarchical state machines
+- manual / autonomous control arbitration
+- emergency stop, timeout, and fault protection
+- MCU–Linux communication and system integration
+
+### 🦾 Robot Motion Control & ROS Integration
+
+Building reusable Linux and ROS control systems, including:
+
+- ROS 2 control hardware interfaces
+- robotic-arm kinematics and dynamics
 - gravity compensation
 - impedance and admittance control
-- MoveIt 2 integration
-- safety and fault recovery
+- MoveIt 2 motion planning
+- navigation and chassis interfaces
+- asynchronous task coordination
+- base–arm coordination
 
-### 🍅 Agricultural Manipulation
+### 🍅 Agricultural Mobile Manipulation
 
-Studying manipulation tasks in greenhouse environments, including:
+Studying greenhouse robot tasks such as:
 
 - tomato harvesting
 - compliant leaf manipulation
 - active perception
-- base–arm coordination
 - RGB-D perception and hand–eye calibration
+- greenhouse navigation
+- mobile base and robotic-arm coordination
 
-### 🧠 Embodied Manipulation
+### 🧠 Embodied Intelligence
 
 Exploring learning-based robot manipulation through:
 
-- dual-arm teleoperation
+- leader–follower teleoperation
 - real-robot dataset collection
 - LeRobot and imitation learning
-- Isaac Sim and sim-to-real experiments
+- simulation and sim-to-real experiments
 - autonomous leaf manipulation
+- learned manipulation policy deployment
 
 ---
 

@@ -6,7 +6,7 @@
 
 > 专注于 **嵌入式控制**、**机械臂运动控制** 与 **农业机器人系统集成**。
 
-我目前就读于华南农业大学，主要围绕农业机器人开展学习、研究与项目实践，关注如何将嵌入式控制、机械臂、感知系统、ROS 与真实机器人部署连接起来。
+我目前就读于华南农业大学，主要围绕农业机器人系统开展学习、研究与项目实践，关注如何将嵌入式控制、机械臂、感知系统、ROS 与真实机器人部署连接起来。
 
 目前，我是 [AgroTech-SCAU](https://github.com/AgroTech-SCAU) 的主要负责人之一，主要负责：
 
@@ -19,44 +19,60 @@
 
 ## 🔬 当前研究方向
 
-我目前围绕温室移动操作机器人，开展三条相互关联的研究主线。
+我目前的工作主要围绕温室移动操作机器人展开，覆盖四个相互关联的方向。
 
-### 🦾 机械臂运动控制
+### ⚙️ 嵌入式控制与移动平台
 
-构建基于达妙电机的自研机械臂平台，主要包括：
+开发面向移动底盘、机械臂和执行机构的 MCU 实时控制系统，主要包括：
 
-* ROS 2 control 与硬件接口
+* 电机与执行机构控制
+* CAN 与串口通信
+* IMU 与里程计数据处理
+* 层级状态机
+* 手动与自主控制权仲裁
+* 急停、超时与故障保护
+* MCU–Linux 通信与系统集成
+
+### 🦾 机器人运动控制与 ROS 集成
+
+构建可复用的 Linux 与 ROS 机器人控制系统，主要包括：
+
+* ROS 2 control 硬件接口
 * 机械臂运动学与动力学
 * 重力补偿
 * 阻抗与导纳控制
-* MoveIt 2 集成
-* 安全保护与故障恢复
+* MoveIt 2 运动规划
+* 导航与底盘控制接口
+* 异步任务编排
+* 底盘与机械臂协同
 
-### 🍅 农业机器人操作
+### 🍅 农业移动操作
 
-研究温室环境中的机器人操作任务，主要包括：
+研究温室环境中的机器人作业任务，主要包括：
 
 * 番茄采摘
 * 柔顺拨叶
 * 主动感知
-* 底盘与机械臂协同
 * RGB-D 感知与手眼标定
+* 温室导航
+* 移动底盘与机械臂协同
 
-### 🧠 具身智能操作
+### 🧠 具身智能
 
-探索基于真实机器人数据的学习型操作方法，主要包括：
+探索基于学习的机器人操作方法，主要包括：
 
-* 双臂遥操作
+* 主从遥操作
 * 真实机器人数据采集
 * LeRobot 与模仿学习
-* Isaac Sim 与 Sim-to-Real
+* 仿真与 Sim-to-Real
 * 自主拨叶操作
+* 学习型操作策略部署
 
 ---
 
 ## 📌 项目地图
 
-以下仓库按照当前在研究、工程开发和知识复用中的角色进行分类。
+以下仓库按照它们当前在研究、工程开发和知识复用中的作用进行分类。
 
 ### 当前研究与主要平台
 
@@ -71,12 +87,12 @@
 
 ### 工具、规范与支撑仓库
 
-| 项目                                                                                                                                | 定位                        |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)                                                             | 手眼、眼在手外与多相机标定工具           |
-| [AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection) | 舵轮底盘机械模型与设计资料             |
-| [AgroTech-SCAU/Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)       | 嵌入式分层架构、通用 SDK、通信、安全与开发规范 |
-| [AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)         | 可复用的 ROS 与机械臂运动控制架构       |
+| 项目                                                                                                                                | 定位                      |
+| --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)                                                             | 手眼、眼在手外与多相机标定工具         |
+| [AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection) | 舵轮底盘机械模型与设计资料           |
+| [AgroTech-SCAU/Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)       | 嵌入式架构、通用 SDK、通信、安全与开发规范 |
+| [AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)         | 可复用的 ROS 与机械臂运动控制架构     |
 
 <details>
 <summary><strong>历史项目与工程参考</strong></summary>
@@ -210,14 +226,14 @@
 
 <div align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img alt="Kaede-Rei's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
+      <img alt="Kaede-Rei 的 GitHub 统计" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img alt="Kaede-Rei's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
+        <img alt="Kaede-Rei 常用语言" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
     </a>
 </div>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="Contribution Graph" style="width: 100%;"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献活动图" style="width: 100%;"/>
 </div>
 
 ---

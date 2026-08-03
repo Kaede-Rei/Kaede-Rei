@@ -242,6 +242,6 @@ Representative team projects include:
 * GitHub: [Kaede-Rei](https://github.com/Kaede-Rei)
 * Blog: [kaede-rei.github.io](https://kaede-rei.github.io/)
 * Email: [kaerei86@gmail.com](mailto:kaerei86@gmail.com)
-[kaerei@foxmail.com](mailto:kaerei@foxmail.com)
+* Email: [kaerei@foxmail.com](mailto:kaerei@foxmail.com)
 
 ---

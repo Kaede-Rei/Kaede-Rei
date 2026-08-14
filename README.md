@@ -87,8 +87,10 @@ I am also exploring learning-based robot manipulation through:
 
 This direction is currently experimental and complements, rather than replaces, the classical robot-control stack
 
-> **Scope note on mobile navigation:**  
+> **Scope note on mobile navigation:**
+> 
 > My personal work on mobile navigation has mainly been MCU-side IMU / wheel-odometry processing, local pose estimation, and simple blank-map navigation
+> 
 > SLAM, global localization, and the ROS 2 / Nav2 navigation stack used in team platforms are primarily developed by other team members and are not presented here as my personal implementation
 
 ---

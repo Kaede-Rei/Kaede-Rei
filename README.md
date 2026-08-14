@@ -2,128 +2,160 @@
 
 [中文](README_zh.md) | **English**
 
-> SCAU Undergraduate | Agri-Robotics Developer | AgroTech-SCAU Lead
+> SCAU Undergraduate | Robotics & Embedded Systems Developer | AgroTech-SCAU Lead
 
-> Focusing on **Embedded Control**, **Robotic Arm Motion Control**, and **Agricultural Robot System Integration**.
+> Building reusable robot systems from **MCU-level control** to **robot manipulation**, **ROS integration**, and **real-world deployment**
 
-I am an undergraduate student at South China Agricultural University, working on agricultural robotics systems that connect embedded control, robotic arms, perception, ROS, and real-world deployment.
+I am an undergraduate student at South China Agricultural University, working on robotics systems for agricultural and real-world applications
 
-Currently, I am one of the main leads of [AgroTech-SCAU](https://github.com/AgroTech-SCAU), mainly responsible for:
+My current work focuses on:
 
-* electronic control architecture
-* robotic arm motion control
-* system integration
-* engineering standards and project organization
+- embedded control and robot hardware interfaces
+- serial manipulator control, kinematics, and dynamics
+- ROS and MoveIt manipulation systems
+- robot calibration and RGB-D perception integration
+- teleoperation and real-robot data collection
+- agricultural mobile manipulation
+
+I am also one of the main leads of [AgroTech-SCAU](https://github.com/AgroTech-SCAU), where I mainly work on embedded control, robotic-arm systems, robot integration, engineering standards, and project organization
+
+My goal is to build robot software that is not only demonstrable, but also reusable, testable, and deployable on real hardware
 
 ---
 
-## 🔬 Current Research
+## 🔬 Current Work
 
-My current work focuses on greenhouse mobile manipulation through three connected directions:
+My current work is organized around four connected layers of a real robot system
 
-### ⚙️ Embedded Control & Mobile Platforms
+### ⚙️ Embedded Control & Robot Hardware
 
-Developing MCU-side control systems for mobile chassis, robotic arms, and actuators, including:
+I develop MCU-side control systems and hardware interfaces for mobile robots, robotic arms, and actuators, including:
 
 - motor and actuator control
 - CAN and serial communication
-- IMU and odometry processing
+- IMU and wheel-odometry processing
+- MCU-side local pose estimation
+- simple IMU + odometry based navigation on blank maps
 - hierarchical state machines
 - manual / autonomous control arbitration
 - emergency stop, timeout, and fault protection
-- MCU–Linux communication and system integration
+- MCU–Linux communication
 
-### 🦾 Robot Motion Control & ROS Integration
+### 🦾 Serial Manipulator Control
 
-Building reusable Linux and ROS control systems, including:
+I am developing reusable control infrastructure for custom serial manipulators, including:
 
-- ROS 2 control hardware interfaces
-- robotic-arm kinematics and dynamics
+- robot model abstraction
+- joint and actuator mapping
+- forward and inverse kinematics
+- rigid-body dynamics
 - gravity compensation
-- impedance and admittance control
-- MoveIt 2 motion planning
-- navigation and chassis interfaces
-- asynchronous task coordination
-- base–arm coordination
+- hardware abstraction
+- CAN / serial transport
+- safety and command validation
+- ROS 2 / ros2_control integration
+- MoveIt 2 integration
 
-### 🍅 Agricultural Mobile Manipulation
+My current main platform for this work is [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)
 
-Studying greenhouse robot tasks such as:
+### 🍅 Robot Manipulation & Agricultural Robotics
+
+On top of the robot-control layer, I work on real manipulation applications such as:
 
 - tomato harvesting
-- compliant leaf manipulation
-- active perception
-- RGB-D perception and hand–eye calibration
-- greenhouse navigation
-- mobile base and robotic-arm coordination
+- end-effector control
+- RGB-D perception integration
+- Planning Scene construction
+- hand–eye and multi-camera calibration
+- robotic-arm motion planning
+- base–arm system integration
+- compliant leaf manipulation experiments
 
-### 🧠 Embodied Intelligence
+The current ROS 2 application stack is being developed in [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2)
 
-Exploring learning-based robot manipulation through:
+### 🧠 Teleoperation & Learning-Based Manipulation
+
+I am also exploring learning-based robot manipulation through:
 
 - leader–follower teleoperation
+- dual-arm teleoperation
 - real-robot dataset collection
-- LeRobot and imitation learning
-- simulation and sim-to-real experiments
-- autonomous leaf manipulation
-- learned manipulation policy deployment
+- LeRobot
+- imitation learning
+- simulation experiments
+- learned manipulation policies
+
+This direction is currently experimental and complements, rather than replaces, the classical robot-control stack
+
+> **Scope note on mobile navigation:**  
+> My personal work on mobile navigation has mainly been MCU-side IMU / wheel-odometry processing, local pose estimation, and simple blank-map navigation
+> SLAM, global localization, and the ROS 2 / Nav2 navigation stack used in team platforms are primarily developed by other team members and are not presented here as my personal implementation
 
 ---
 
 ## 📌 Project Map
 
-My repositories are organized by their current role in research, engineering development, and knowledge reuse.
+My repositories are organized around two parts: my personal robotics projects and the systems I develop or lead within [AgroTech-SCAU](https://github.com/AgroTech-SCAU)
 
-### Active Research & Main Platforms
+### 🚀 Main Personal Projects
 
-| Project                                                                                                       | Area                      | Current Role                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [DM-Arm-Hardware-Interface](https://github.com/Kaede-Rei/DM-Arm-Hardware-Interface)                           | Robotic Arm Control       | Main ROS 2 platform for DM robotic-arm hardware interfaces, dynamics, and compliant control                      |
-| [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves)                             | Agricultural Manipulation | Leaf-manipulation and active-perception research for greenhouse harvesting                                       |
-| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)                                       | Embodied AI               | Dual-arm teleoperation, real-robot datasets, imitation learning, and policy deployment                           |
-| [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)                                                 | Motion Planning           | MoveIt 2 integration, reachable-pose evaluation, and manipulation task-planning experiments                      |
-| [AgroTech-SCAU/Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)               | Mobile Robot              | Main Atlas chassis repository covering embedded control, MCU–Linux integration, navigation, and autonomous tasks |
-| [AgroTech-SCAU/Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis) | Mobile Robot              | Wheel–rail integrated chassis platform and control prototype                                                     |
+| Project                                                                           | Area                         | Current Role                                                                                                                                      |
+| --------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)                     | Robot Control Infrastructure | Portable C++17 control, dynamics, safety, hardware abstraction, communication, and framework-adapter core for custom serial manipulators          |
+| [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2)             | Agricultural Manipulation    | ROS 2 + MoveIt 2 tomato-picking application stack built on SerialArm-Core, covering motion, end-effector, perception, task, and deployment layers |
+| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)           | Embodied Manipulation        | Dual-arm teleoperation, real-robot dataset collection, LeRobot integration, imitation learning, and policy deployment experiments                 |
+| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)             | Robot Calibration            | GUI tools for eye-in-hand, eye-to-hand, and camera-to-camera calibration                                                                          |
+| [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves) | Agricultural Manipulation    | Ongoing research on compliant leaf manipulation, active perception, and manipulation under occlusion                                              |
 
-### Tools, Standards & Supporting Repositories
+### 🌱 AgroTech-SCAU Projects
 
-| Project                                                                                                                           | Role                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)                                                             | Hand–eye, eye-to-hand, and multi-camera calibration tools                             |
-| [AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis-Model-Collection) | Mechanical models and design assets for steering-wheel chassis platforms              |
-| [AgroTech-SCAU/Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)       | Embedded architecture, reusable SDK, communication, safety, and development standards |
-| [AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)         | Reusable ROS and robotic-arm motion-control architecture                              |
+These repositories are developed or led by me as part of [AgroTech-SCAU](https://github.com/AgroTech-SCAU), covering mobile robots, dual-arm systems, embedded infrastructure, and reusable robotics engineering standards
+
+| Project                                                                                                       | Area                          | My Work                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)                             | Mobile Robot                  | MCU-side chassis control, motor control, IMU and wheel-odometry processing, local pose estimation, simple blank-map navigation, state machines, safety logic, MCU–Linux communication, and complete vehicle integration |
+| [Tea-Picking-Dual-Arm](https://github.com/AgroTech-SCAU/Tea-Picking-Dual-Arm)                                 | Dual-Arm Robotics             | Dual-arm tea-picking platform, leader–follower teleoperation, arm communication and control integration, dual-arm coordination, and real-robot demonstration / data-collection infrastructure                           |
+| [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)               | Mobile Robot                  | Wheel–rail integrated mobile platform, embedded motion control, actuator integration, communication, and system-level control prototype                                                                                 |
+| [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard) | Embedded Infrastructure       | Reusable embedded architecture, driver / SDK organization, communication interfaces, safety mechanisms, coding conventions, and engineering standards for robot projects                                                |
+| [Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)   | Robot Software Infrastructure | Reusable robotic-arm software architecture covering hardware interfaces, motion-control organization, ROS integration, project structure, and engineering conventions                                                   |
+
+> **Contribution boundary for mobile navigation**
+>
+> My work on `Steering-Wheel-Chassis` focuses on the embedded and system-integration layers, including IMU / odometry processing, local pose estimation, and simple MCU-side blank-map navigation
+>
+> The LiDAR SLAM, global localization, path planning, and ROS 2 / Nav2 navigation components contained in the complete team platform are developed by other team members and are not presented as my personal implementation
+
+### 🔧 Supporting & Previous Projects
 
 <details>
-<summary><strong>Legacy & Engineering References</strong></summary>
+<summary><strong>Show supporting and previous projects</strong></summary>
 
 <br>
 
-These repositories are retained as historical implementations, migration sources, or engineering references.
-
-| Project                                                                         | Reference Value                                                                                            |
-| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)         | Complete ROS1 tomato-harvesting workflow with MoveIt, RGB-D perception, point clouds, and GUI task control |
-| [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)               | ROS1 DM robotic-arm harvesting implementation and ROS 2 migration reference                                |
-| [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)                   | MCU-side robotic-arm kinematics, CAN motor control, communication, and HFSM reference                      |
-| [Multi-Arm-Controller](https://github.com/Kaede-Rei/Multi-Arm-Controller)       | Multi-arm planning interfaces and reachable-pose search prototype                                          |
-| [Lift-Gripper-Controller](https://github.com/Kaede-Rei/Lift-Gripper-Controller) | Embedded lift and gripper controller with PID, CAN communication, and HFSM                                 |
-| [Steering-Wheel-Chassis](https://github.com/Kaede-Rei/Steering-Wheel-Chassis)   | Earlier personal version of the chassis project; current development has moved to AgroTech-SCAU            |
-| [Visial-Robotic-Arm-Car](https://github.com/Kaede-Rei/Visial-Robotic-Arm-Car)   | Early visual robotic-arm mobile manipulation prototype                                                     |
-| [Embedded-About](https://github.com/Kaede-Rei/Embedded-About)                   | Index and archive of early embedded-system projects                                                        |
+| Project                                                                         | Reference Value                                                                                          |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)                   | Earlier MoveIt 2 integration, reachable-pose evaluation, and robotic-arm motion-planning experiments     |
+| [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)                   | MCU-side robotic-arm kinematics, CAN motor control, communication, and HFSM implementation               |
+| [Multi-Arm-Controller](https://github.com/Kaede-Rei/Multi-Arm-Controller)       | Multi-arm planning interfaces and reachable-pose search prototype                                        |
+| [Lift-Gripper-Controller](https://github.com/Kaede-Rei/Lift-Gripper-Controller) | Embedded lift and gripper controller with motor control, PID, CAN communication, and HFSM                |
+| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)         | Earlier ROS 1 tomato-harvesting system with MoveIt, RGB-D perception, point clouds, and GUI task control |
+| [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)               | Earlier DM robotic-arm tomato-picking system and ROS 1 → ROS 2 migration reference                       |
+| [Visial-Robotic-Arm-Car](https://github.com/Kaede-Rei/Visial-Robotic-Arm-Car)   | Early integrated visual mobile-manipulation prototype                                                    |
+| [Embedded-About](https://github.com/Kaede-Rei/Embedded-About)                   | Archive and index of earlier embedded-system projects                                                    |
 
 </details>
 
+### 🛠️ Personal Infrastructure
+
 <details>
-<summary><strong>Personal Infrastructure & Other Repositories</strong></summary>
+<summary><strong>Show personal infrastructure</strong></summary>
 
 <br>
 
-| Project                                                                 | Role                                                                    |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| [Kaede-Rei](https://github.com/Kaede-Rei/Kaede-Rei)                     | GitHub profile README                                                   |
-| [kaede-rei.github.io](https://github.com/Kaede-Rei/kaede-rei.github.io) | Personal website and technical blog                                     |
-| [Resume-Template](https://github.com/Kaede-Rei/Resume-Template)         | Personal résumé and document template                                   |
+| Project                                                                 | Role                                 |
+| ----------------------------------------------------------------------- | ------------------------------------ |
+| [kaede-rei.github.io](https://github.com/Kaede-Rei/kaede-rei.github.io) | Personal website and technical notes |
+| [Resume-Template](https://github.com/Kaede-Rei/Resume-Template)         | Résumé and document templates        |
 
 </details>
 
@@ -174,50 +206,39 @@ These repositories are retained as historical implementations, migration sources
 
 ---
 
-## 🧩 Engineering Philosophy
-
-I care more about complete and reusable robot systems than isolated demonstrations.
-
-```text
-real task
-    ↓
-hardware and sensor constraints
-    ↓
-embedded control and safety
-    ↓
-motion control and ROS integration
-    ↓
-perception and task coordination
-    ↓
-experiments, documentation and deployment
-```
-
-I prefer systems that are:
-
-- safe before powerful
-- modular before complex
-- reproducible before flashy
-- maintainable before temporary
-- verified on real hardware
-
----
-
 ## 🌱 AgroTech-SCAU
 
-At [AgroTech-SCAU](https://github.com/AgroTech-SCAU), I contribute to:
+I am one of the main leads of [AgroTech-SCAU](https://github.com/AgroTech-SCAU)
+
+My main responsibilities include:
 
 - embedded control architecture
-- robotic arm motion control
-- mobile robot system integration
-- project architecture and engineering standards
-- technical mentoring and knowledge transfer
+- MCU firmware and robot hardware interfaces
+- robotic-arm motion-control systems
+- CAN / serial communication architecture
+- robot system integration
+- engineering standards and reusable infrastructure
+- project architecture and technical mentoring
 
-Representative team projects include:
+For mobile robot platforms, my work is mainly concentrated on the lower control and integration layers:
 
-- [Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)
-- [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)
-- [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard)
-- [Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)
+```text
+motors / encoders / IMU
+        ↓
+MCU real-time control
+        ↓
+IMU + odometry processing
+        ↓
+local pose / blank-map navigation
+        ↓
+communication bridge
+        ↓
+upper-level robot system
+```
+
+The complete team platforms may also contain LiDAR SLAM, localization, global planning, Nav2, and other navigation components
+
+Those components are developed collaboratively within the team and not my personal implementation
 
 ---
 

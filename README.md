@@ -247,13 +247,14 @@ Those components are developed collaboratively within the team and not my person
 ## 📊 GitHub Stats
 
 <div align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img alt="Kaede-Rei's Github Stats" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
+    <a href="https://github.com/stats-organization/github-stats-extended">
+      <img alt="Kaede-Rei's Github Stats" src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
     </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img alt="Kaede-Rei's Top Languages" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
+    <a href="https://github.com/stats-organization/github-stats-extended">
+        <img alt="Kaede-Rei's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
     </a>
 </div>
+
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="Contribution Graph" style="width: 100%;"/>
 </div>

@@ -248,11 +248,11 @@ IMU + 里程计处理
 ## 📊 GitHub 统计
 
 <div align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img alt="Kaede-Rei 的 GitHub 统计" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
+    <a href="https://github.com/stats-organization/github-stats-extended">
+      <img alt="Kaede-Rei 的 GitHub 统计" src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
     </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img alt="Kaede-Rei 常用语言" src="https://github-readme-stats-flame-gamma-74.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
+    <a href="https://github.com/stats-organization/github-stats-extended">
+        <img alt="Kaede-Rei 常用语言" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
     </a>
 </div>
 

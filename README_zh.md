@@ -1,272 +1,165 @@
-# 👋 你好，我是 Kaede Rei
+<!-- visual-profile-v2 -->
+<p align="right"><strong>中文</strong> · <a href="README.md">English</a></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0%3A0F172A%2C55%3A6D28D9%2C100%3A0D9488&amp;height=190&amp;section=header&amp;text=Kaede%20Rei&amp;fontSize=48&amp;fontColor=FFFFFF&amp;fontAlignY=37&amp;desc=Robotics%20Developer&amp;descSize=18&amp;descAlignY=59&amp;animation=fadeIn" alt="Kaede Rei — Robotics Developer" width="100%" /></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Robotic%20Arms-7C3AED?style=for-the-badge" alt="Robotic Arms" />
+  <img src="https://img.shields.io/badge/Embedded%20Software-0D9488?style=for-the-badge" alt="Embedded Software" />
+  <img src="https://img.shields.io/badge/System%20Integration-2563EB?style=for-the-badge" alt="System Integration" />
+</p>
+<p align="center"><strong>🤖 机器人开发者</strong><br />🎓 华南农业大学本科生 &nbsp; · &nbsp; 🌱 AgroTech-SCAU 主要负责人之一</p>
+<p align="center">
+  <a href="https://kaede-rei.github.io/"><img src="https://img.shields.io/badge/Website-6366F1?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Website" /></a>
+  <a href="mailto:kaerei86@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Gmail" /></a>
+  <a href="https://github.com/AgroTech-SCAU"><img src="https://img.shields.io/badge/AgroTech%20SCAU-0D9488?style=flat-square&amp;logo=github&amp;logoColor=white" alt="AgroTech SCAU" /></a>
+</p>
 
-**中文** | [English](README.md)
+## 👋 关于我
 
-> 华南农业大学本科生 | 机器人与嵌入式系统开发者 | AgroTech-SCAU 负责人
+我主要开发机械臂控制软件、机器人嵌入式系统与整机集成框架，围绕农业机器人和真实硬件开展工程实践；关注从模型、驱动与控制，到标定、任务编排和部署的完整开发过程
 
-> 从 **MCU 底层控制** 到 **机器人操作**、**ROS 集成** 与 **真实机器人部署**，构建可复用的机器人系统
+希望把具体机器人中的实现逐步沉淀为通用内核、可移植模块与可复用接口，让新的机器人项目能在已有能力上继续构建
 
-我目前就读于华南农业大学，主要围绕农业机器人与真实场景机器人系统开展学习、研究与工程实践
+## 🚀 代表工作
 
-目前的工作重点包括：
+以下项目围绕 **通用化、可移植性与跨项目复用** 持续建设，覆盖我的个人与协会仓库；我在其中主导开发或承担主要代码贡献
 
-* 嵌入式控制与机器人硬件接口
-* 串联机械臂控制、运动学与动力学
-* ROS 与 MoveIt 机器人操作系统
-* 机器人标定与 RGB-D 感知集成
-* 遥操作与真实机器人数据采集
-* 农业移动操作机器人
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Kaede-Rei/SerialArm-Core">🦾 SerialArm-Core</a></h3>
+<p><img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square" alt="C++17" /> <img src="https://img.shields.io/badge/Dynamics%20Core-7C3AED?style=flat-square" alt="Dynamics Core" /></p>
+<p>以构建通用、可扩展的 C++17 机械臂动力学内核为目标，围绕刚体动力学、重力补偿与动力学标定，将核心能力与具体机器人模型、执行器后端及上层框架解耦</p>
+<p>通过 Robot Profile 与统一硬件接口适配不同机械臂，提供阻抗与导纳控制、Python Binding 及 ROS 2 / ros2_control / MoveIt 2 接入；配套 SerialArm Studio 组织模型、标定、控制与诊断流程；Linux 安装包见 <a href="https://github.com/Kaede-Rei/SerialArm-Core/releases">Releases</a></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/Competition-Robot-2026-Atlas">🤖 Atlas</a></h3>
+<p><img src="https://img.shields.io/badge/STM32-03234B?style=flat-square" alt="STM32" /> <img src="https://img.shields.io/badge/Swerve%20%2B%205--DOF%20Arm-0D9488?style=flat-square" alt="Swerve + 5-DOF Arm" /></p>
+<p>已在多台比赛轮式机器人上迭代与复用的嵌入式软件基线，持续面向通用化与配置化适配完善，核心覆盖 <strong>舵轮底盘控制、五轴机械臂运动控制、遥控器接入与主从遥操作</strong></p>
+<p>围绕 MCU 驱动与通信、运动学与控制调度、状态机、控制权及故障处理完善复用边界，适配不同整车配置；整机层也实现了 YASMIN 任务状态机</p>
+<p>Atlas 现作为归档基线保留，相关代码迁移至 <a href="https://github.com/AgroTech-SCAU/Competition-Robot-2026-Longinus">Longinus</a> 等 Competition-Robot-2026 项目继续演进</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard">⚙️ Embedded Control SDK</a></h3>
+<p><img src="https://img.shields.io/badge/MCU%20SDK-0D9488?style=flat-square" alt="MCU SDK" /> <img src="https://img.shields.io/badge/Drivers%20%26%20Architecture-334155?style=flat-square" alt="Drivers &amp; Architecture" /></p>
+<p>以跨项目、跨 MCU 平台复用为目标，将设备驱动、基础模块与运动学算法从具体 HAL、板卡和项目业务中分离，逐步形成公共嵌入式软件基础</p>
+<p>围绕平台接口、项目侧装配与分层边界组织设备 SDK 和通信能力，使新设备、新板卡能通过适配接入；同时统一超时、停止与故障处理约定</p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/AT-System-Integration">🧩 AT-System-Integration</a></h3>
+<p><img src="https://img.shields.io/badge/HSM%20%2B%20Behavior%20Tree-2563EB?style=flat-square" alt="HSM + Behavior Tree" /> <img src="https://img.shields.io/badge/Developing-B45309?style=flat-square" alt="Developing" /></p>
+<p>以构建面向不同机器人与作业任务的通用集成框架为目标，通过统一能力接口与适配器连接机械臂、视觉、导航和电控后端，减少任务流程对单个项目实现的依赖</p>
+<p>配套 ATIL Robot Studio 提供可视化状态编排、行为树任务设计与运行诊断入口；目前持续开发中，已有能力层 Mock 与行为树执行路径，真机接入按实际验证进度推进</p>
+</td>
+</tr>
+</table>
 
-同时，我也是 [AgroTech-SCAU](https://github.com/AgroTech-SCAU) 的主要负责人之一，主要负责嵌入式控制、机械臂系统、机器人系统集成、工程规范与项目组织
+## 🖥️ 工具与界面
 
-我的目标是构建不仅能够完成 Demo，同时具备可复用、可测试、可维护并能够部署到真实硬件上的机器人软件系统
-
----
-
-## 🔬 当前工作
-
-我目前的工作主要围绕真实机器人系统的四个相互关联的层级展开
-
-### ⚙️ 嵌入式控制与机器人硬件
-
-开发面向移动机器人、机械臂和执行机构的 MCU 实时控制系统与硬件接口，包括：
-
-* 电机与执行机构控制
-* CAN 与串口通信
-* IMU 与轮式里程计数据处理
-* MCU 端局部位姿估计
-* 基于 IMU + 里程计的空白地图简易导航
-* 层级状态机
-* 手动 / 自主控制权仲裁
-* 急停、超时与故障保护
-* MCU–Linux 通信
-
-### 🦾 串联机械臂控制
-
-面向自研串联机械臂构建可复用的控制基础设施，包括：
-
-* 机器人模型抽象
-* 关节与执行器映射
-* 正运动学与逆运动学
-* 刚体动力学
-* 重力补偿
-* 硬件抽象
-* CAN / 串口通信链路
-* 安全与指令校验
-* ROS 2 / ros2_control 集成
-* MoveIt 2 集成
-
-目前这一方向的主要平台是 [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)
-
-### 🍅 机器人操作与农业机器人
-
-在机器人控制基础设施之上，我进一步开展真实机器人操作任务，包括：
-
-* 番茄采摘
-* 末端执行器控制
-* RGB-D 感知集成
-* Planning Scene 构建
-* 手眼标定与多相机标定
-* 机械臂运动规划
-* 底盘与机械臂系统集成
-* 柔顺拨叶实验
-
-目前 ROS 2 应用层主要在 [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2) 中开发
-
-### 🧠 遥操作与学习型机器人操作
-
-同时探索基于学习的机器人操作方法，包括：
-
-* 主从遥操作
-* 双臂遥操作
-* 真实机器人数据采集
-* LeRobot
-* 模仿学习
-* 仿真实验
-* 学习型机器人操作策略
-
-这一方向目前仍以实验与探索为主，用于补充而不是替代传统机器人控制系统
-
-> **关于移动导航的贡献边界：**
-> 
-> 我个人在移动导航方向的工作主要集中于 MCU 端 IMU / 轮式里程计处理、局部位姿估计以及基于 IMU + 里程计的空白地图简易导航
-> 
-> 团队平台中的 SLAM、全局定位以及 ROS 2 / Nav2 导航系统主要由其他成员负责，不作为我的个人实现进行展示
-
----
-
-## 📌 项目地图
-
-我的仓库主要分为两部分：个人机器人项目，以及我在 [AgroTech-SCAU](https://github.com/AgroTech-SCAU) 中开发或负责的机器人系统
-
-### 🚀 主要个人项目
-
-| 项目                                                                                | 方向        | 当前定位                                                                 |
-| --------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------- |
-| [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)                     | 机器人控制基础设施 | 面向自研串联机械臂的 C++17 控制、动力学、安全、硬件抽象、通信与框架适配核心                            |
-| [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2)             | 农业机器人操作   | 基于 SerialArm-Core 构建的 ROS 2 + MoveIt 2 番茄采摘应用栈，覆盖运动、末端执行器、感知、任务与整机部署 |
-| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)           | 具身机器人操作   | 双臂遥操作、真实机器人数据采集、LeRobot 集成、模仿学习与策略部署实验                               |
-| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)             | 机器人标定     | 面向眼在手上、眼在手外以及相机间外参标定的 GUI 工具                                         |
-| [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves) | 农业机器人操作   | 柔顺拨叶、主动感知以及遮挡条件下机器人操作研究                                              |
-
-### 🌱 AgroTech-SCAU 项目
-
-以下仓库是我在 [AgroTech-SCAU](https://github.com/AgroTech-SCAU) 中开发或负责的项目，覆盖移动机器人、双臂机器人、嵌入式基础设施以及可复用机器人软件工程规范
-
-| 项目                                                                                                            | 方向        | 我的工作                                                                    |
-| ------------------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------- |
-| [Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)                             | 移动机器人     | MCU 底盘控制、电机控制、IMU 与轮式里程计处理、局部位姿估计、空白地图简易导航、状态机、安全机制、MCU–Linux 通信与整车系统集成 |
-| [Tea-Picking-Dual-Arm](https://github.com/AgroTech-SCAU/Tea-Picking-Dual-Arm)                                 | 双臂机器人     | 双臂茶叶采摘平台、主从遥操作、机械臂通信与控制集成、双臂协同以及真机演示 / 数据采集基础设施                         |
-| [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)               | 移动机器人     | 轮轨复合移动平台、嵌入式运动控制、执行机构集成、通信与整机控制原型                                       |
-| [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard) | 嵌入式基础设施   | 可复用嵌入式架构、驱动 / SDK 组织、通信接口、安全机制、代码规范与机器人项目工程标准                           |
-| [Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)   | 机器人软件基础设施 | 可复用机械臂软件架构，包括硬件接口、运动控制组织、ROS 集成、项目结构与工程规范                               |
-
-> **移动导航贡献边界**
->
-> 我在 `Steering-Wheel-Chassis` 中的工作主要集中于嵌入式控制与系统集成层，包括 IMU / 里程计处理、局部位姿估计以及 MCU 端空白地图简易导航
->
-> 完整团队平台中的 LiDAR SLAM、全局定位、路径规划以及 ROS 2 / Nav2 导航模块由其他团队成员开发，不作为我的个人实现进行展示
-
-### 🔧 支撑项目与历史项目
+<table>
+<tr><th width="50%"><a href="https://github.com/Kaede-Rei/SerialArm-Core">🦾 SerialArm Studio</a></th><th width="50%"><a href="https://github.com/AgroTech-SCAU/AT-System-Integration">🧩 ATIL Robot Studio</a></th></tr>
+<tr><td><a href="assets/serialarm-studio-dynamics.png"><img src="assets/serialarm-studio-dynamics.png" alt="动力学内核的标定与验证工作台" width="100%" /></a></td><td><a href="assets/atil-robot-studio-orchestration.png"><img src="assets/atil-robot-studio-orchestration.png" alt="AT-System-Integration · 可视化状态与任务编排" width="100%" /></a></td></tr>
+<tr><td align="center"><sub>动力学内核的标定与验证工作台</sub></td><td align="center"><sub>AT-System-Integration · 可视化状态与任务编排</sub></td></tr>
+</table>
 
 <details>
-<summary><strong>展开支撑项目与历史项目</strong></summary>
+<summary>📐 手眼标定工作台</summary>
 
-<br>
-
-| 项目                                                                              | 参考价值                                    |
-| ------------------------------------------------------------------------------- | --------------------------------------- |
-| [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)                   | 早期 MoveIt 2 集成、可达位姿评价与机械臂运动规划实验         |
-| [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)                   | MCU 端机械臂运动学、CAN 电机控制、通信与 HFSM 实现        |
-| [Multi-Arm-Controller](https://github.com/Kaede-Rei/Multi-Arm-Controller)       | 多机械臂规划接口与可达位姿搜索原型                       |
-| [Lift-Gripper-Controller](https://github.com/Kaede-Rei/Lift-Gripper-Controller) | 包含电机控制、PID、CAN 通信与 HFSM 的嵌入式升降与夹爪控制器    |
-| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)         | 早期基于 ROS 1、MoveIt、RGB-D、点云与 GUI 的番茄采摘系统 |
-| [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)               | 早期达妙机械臂番茄采摘系统与 ROS 1 → ROS 2 迁移参考       |
-| [Visial-Robotic-Arm-Car](https://github.com/Kaede-Rei/Visial-Robotic-Arm-Car)   | 早期视觉移动操作机器人综合原型                         |
-| [Embedded-About](https://github.com/Kaede-Rei/Embedded-About)                   | 早期嵌入式系统项目索引与归档                          |
+<p align="center"><a href="https://raw.githubusercontent.com/AgroTech-SCAU/Handeye-Calibration-App/main/docs/images/launcher-connect.png"><img src="https://raw.githubusercontent.com/AgroTech-SCAU/Handeye-Calibration-App/main/docs/images/launcher-connect.png" alt="Handeye Calibration — camera and robot data inputs" width="100%" /></a></p>
 
 </details>
 
-### 🛠️ 个人基础设施
+## 🗺️ 项目地图
 
-<details>
-<summary><strong>展开个人基础设施</strong></summary>
+其他由我主导开发或承担主要代码贡献的代表项目
 
-<br>
-
-| 项目                                                                      | 定位        |
-| ----------------------------------------------------------------------- | --------- |
-| [kaede-rei.github.io](https://github.com/Kaede-Rei/kaede-rei.github.io) | 个人网站与技术笔记 |
-| [Resume-Template](https://github.com/Kaede-Rei/Resume-Template)         | 个人简历与文档模板 |
-
-</details>
-
----
+| 项目 | 方向与主要工作 |
+| --- | --- |
+| 📐 [Handeye-Calibration-App](https://github.com/AgroTech-SCAU/Handeye-Calibration-App) | 可视化手眼标定；相机与机器人数据接入、同步采样、求解诊断与独立几何验证 |
+| 🍅 [Tomato-Manipulation](https://github.com/AgroTech-SCAU/Tomato-Manipulation) | 基于 SerialArm-Core 的番茄采摘应用；MoveIt 2 运动能力、末端执行器、RGB-D / Planning Scene 与采摘任务 |
+| 🧠 [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot) | 双臂遥操作、示范数据采集与处理、LeRobot 硬件适配，以及模仿学习训练与策略部署实验 |
+| 🍃 [Tea-Picking-Dual-Arm](https://github.com/AgroTech-SCAU/Tea-Picking-Dual-Arm) | HX-10HM 与 RM65-B 主从系统；关节映射、归零、重力补偿接入与单 / 双臂遥操作 |
+| ⚙️ [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis) | STM32H723 底盘电控；四舵轮运动学、电机通信、遥控输入、控制调度与故障处理 |
 
 ## 🧰 技术栈
 
-### 💻 编程语言
+<p>
+  <img src="https://img.shields.io/badge/C-555555?style=flat-square&amp;logo=c&amp;logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&amp;logo=cplusplus&amp;logoColor=white" alt="C++17" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ROS%202-22314E?style=flat-square&amp;logo=ros&amp;logoColor=white" alt="ROS 2" />
+  <img src="https://img.shields.io/badge/MoveIt%202-7C3AED?style=flat-square" alt="MoveIt 2" />
+  <img src="https://img.shields.io/badge/ros2__control-2563EB?style=flat-square" alt="ros2_control" />
+  <img src="https://img.shields.io/badge/Pinocchio-059669?style=flat-square" alt="Pinocchio" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&amp;logo=opencv&amp;logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/LeRobot-B45309?style=flat-square&amp;logo=huggingface&amp;logoColor=white" alt="LeRobot" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&amp;logo=stmicroelectronics&amp;logoColor=white" alt="STM32" />
+  <img src="https://img.shields.io/badge/CAN%20Bus-0D9488?style=flat-square" alt="CAN Bus" />
+  <img src="https://img.shields.io/badge/Linux-334155?style=flat-square&amp;logo=linux&amp;logoColor=white" alt="Linux" />
+  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&amp;logo=cmake&amp;logoColor=white" alt="CMake" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
+</p>
 
-![C](https://img.shields.io/badge/-C-000000?style=flat-square\&logo=c\&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-5C3EE8?style=flat-square\&logo=cplusplus\&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square\&logo=rust)
 
-### ⚙️ 嵌入式系统
-
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square\&logo=stmicroelectronics\&logoColor=white)
-![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
-![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
-![CAN](https://img.shields.io/badge/-CAN%20Bus-00599C?style=flat-square)
-![RTOS](https://img.shields.io/badge/-RTOS-5C3EE8?style=flat-square)
-![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
-![Vision](https://img.shields.io/badge/-Embedded%20Vision-5C3EE8?style=flat-square)
-![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)
-
-### 🤖 机器人与控制
-
-![ROS](https://img.shields.io/badge/ROS-Noetic%20%7C%20Humble-22314E?style=flat-square\&logo=ros\&logoColor=white)
-![MoveIt](https://img.shields.io/badge/MoveIt-Motion_Planning-blueviolet?style=flat-square)
-![ros2\_control](https://img.shields.io/badge/ros2__control-Hardware_Interface-blue?style=flat-square)
-![Pinocchio](https://img.shields.io/badge/Pinocchio-Dynamics-green?style=flat-square)
-![RViz](https://img.shields.io/badge/-RViz-22314E?style=flat-square)
-![Gazebo](https://img.shields.io/badge/-Gazebo-2C3E50?style=flat-square)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=flat-square\&logo=opencv\&logoColor=white)
-![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-E7352C?style=flat-square)
-
-### 🧪 工具与平台
-
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=flat-square\&logo=ubuntu\&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square\&logo=cmake\&logoColor=white)
-![Colcon](https://img.shields.io/badge/colcon-ROS2_Build-blue?style=flat-square)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat-square\&logo=git\&logoColor=white)
-![Qt](https://img.shields.io/badge/Qt-GUI-41CD52?style=flat-square\&logo=qt\&logoColor=white)
-
-### ⏳ 仍在学习
-
-![Isaac](https://img.shields.io/badge/-NVIDIA%20Isaac-76B900?style=flat-square\&logo=nvidia\&logoColor=white)
-
----
+- **🦾 机械臂**：运动学与刚体动力学（Pinocchio）、模型与动力学标定、关节控制与重力补偿、ROS 2 / MoveIt 2、手眼标定与 RGB-D 集成；进一步探索遥操作、示范采集与模仿学习
+- **⚙️ 电控 / 嵌入式软件**：STM32、CAN / UART / SPI、执行器与 IMU 接口、舵轮底盘与五轴机械臂运控、遥控器与遥操作、IMU 与里程计处理、局部位姿估计、PID 与层级状态机，以及控制权、超时与故障管理
+- **🧩 系统集成**：Linux 与 ROS 2、MCU–主机通信、坐标系与接口契约、任务状态机与行为树、配置管理、运行诊断与整机部署
 
 ## 🌱 AgroTech-SCAU
 
-我是 [AgroTech-SCAU](https://github.com/AgroTech-SCAU) 的主要负责人之一
+作为协会主要负责人之一，我同时参与具体代码开发与技术组织，包括项目架构、公共基础设施、模块接口协调、系统联调、工程规范、文档与成员技术指导
 
-目前主要负责：
+也为整机方案讨论和跨方向协作补充机械、视觉与移动导航方面的理论知识；主要开发方向仍是机械臂、电控与系统集成
 
-* 嵌入式控制架构
-* MCU 固件与机器人硬件接口
-* 机械臂运动控制系统
-* CAN / 串口通信架构
-* 机器人系统集成
-* 工程规范与可复用基础设施
-* 项目架构与技术指导
+<details>
+<summary>🗃️ 历史项目与学习探索</summary>
 
-在移动机器人平台中，我的工作主要集中于底层控制与系统集成：
+- [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)：早期 MCU 机械臂运动学、CAN 电机控制与状态机实践
+- [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)：MoveIt 2 接入与机械臂运动规划实验
+- [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)：基于 ROS Noetic 的手眼与多相机外参标定工具
+- [Modern-Robotics-Curriculum](https://github.com/Kaede-Rei/Modern-Robotics-Curriculum)：AI 辅助整理的个人机器人学学习资料与教学实验
 
-```text
-电机 / 编码器 / IMU
-        ↓
-MCU 实时控制
-        ↓
-IMU + 里程计处理
-        ↓
-局部位姿 / 空白地图导航
-        ↓
-通信桥接
-        ↓
-上层机器人系统
-```
+</details>
 
-完整的团队机器人平台还可能包含 LiDAR SLAM、定位、全局规划、Nav2 等导航组件
+## 📊 开发活动
 
-这些部分由团队成员协作开发，并非我的个人实现
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&amp;show_icons=true&amp;rank_icon=github&amp;role=OWNER%2CORGANIZATION_MEMBER%2CCOLLABORATOR&amp;include_all_commits=true&amp;hide=contribs&amp;show=contributions&amp;line_height=20&amp;card_width=450&amp;custom_title=Development%20Stats&amp;bg_color=0D1117&amp;title_color=C4B5FD&amp;text_color=C9D1D9&amp;icon_color=2DD4BF&amp;border_color=30363D" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&amp;show_icons=true&amp;rank_icon=github&amp;role=OWNER%2CORGANIZATION_MEMBER%2CCOLLABORATOR&amp;include_all_commits=true&amp;hide=contribs&amp;show=contributions&amp;line_height=20&amp;card_width=450&amp;custom_title=Development%20Stats&amp;bg_color=F8FAFC&amp;title_color=6D28D9&amp;text_color=334155&amp;icon_color=0D9488&amp;border_color=E2E8F0" alt="GitHub development statistics" width="100%" />
+</picture>
+</td>
+<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&amp;layout=compact&amp;langs_count=6&amp;card_width=450&amp;custom_title=Public%20Repo%20Languages&amp;bg_color=0D1117&amp;title_color=C4B5FD&amp;text_color=C9D1D9&amp;icon_color=2DD4BF&amp;border_color=30363D" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&amp;layout=compact&amp;langs_count=6&amp;card_width=450&amp;custom_title=Public%20Repo%20Languages&amp;bg_color=F8FAFC&amp;title_color=6D28D9&amp;text_color=334155&amp;icon_color=0D9488&amp;border_color=E2E8F0" alt="Public repository language distribution" width="100%" />
+</picture>
+</td>
+</tr>
+</table>
 
----
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaede-Rei&amp;theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaede-Rei&amp;theme=github" alt="GitHub profile and contribution summary" width="100%" />
+</picture>
+</p>
 
-## 📊 GitHub 统计
+## 📫 联系我
 
-<div align="center">
-    <a href="https://github.com/stats-organization/github-stats-extended">
-      <img alt="Kaede-Rei 的 GitHub 统计" src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
-    </a>
-    <a href="https://github.com/stats-organization/github-stats-extended">
-        <img alt="Kaede-Rei 常用语言" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
-    </a>
-</div>
+<p align="center">
+  <a href="https://kaede-rei.github.io/"><img src="https://img.shields.io/badge/Website-6366F1?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Website" /></a>
+  <a href="mailto:kaerei86@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Gmail" /></a>
+  <a href="https://github.com/AgroTech-SCAU"><img src="https://img.shields.io/badge/AgroTech%20SCAU-0D9488?style=flat-square&amp;logo=github&amp;logoColor=white" alt="AgroTech SCAU" /></a>
+</p>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="贡献活动图" style="width: 100%;"/>
-</div>
+<p align="center"><a href="mailto:kaerei@foxmail.com">备用邮箱：kaerei@foxmail.com</a></p>
 
----
-
-## 📫 联系方式
-
-* GitHub：[Kaede-Rei](https://github.com/Kaede-Rei)
-* 博客：[kaede-rei.github.io](https://kaede-rei.github.io/)
-* 邮箱：[kaerei86@gmail.com](mailto:kaerei86@gmail.com)
-* 邮箱：[kaerei@foxmail.com](mailto:kaerei@foxmail.com)
-
----
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0%3A0F172A%2C55%3A6D28D9%2C100%3A0D9488&amp;height=75&amp;section=footer" alt="Profile footer" width="100%" />

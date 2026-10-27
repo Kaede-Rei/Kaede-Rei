@@ -1,271 +1,165 @@
-# 👋 Hi, I'm Kaede Rei
+<!-- visual-profile-v2 -->
+<p align="right"><a href="README_zh.md">中文</a> · <strong>English</strong></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0%3A0F172A%2C55%3A6D28D9%2C100%3A0D9488&amp;height=190&amp;section=header&amp;text=Kaede%20Rei&amp;fontSize=48&amp;fontColor=FFFFFF&amp;fontAlignY=37&amp;desc=Robotics%20Developer&amp;descSize=18&amp;descAlignY=59&amp;animation=fadeIn" alt="Kaede Rei — Robotics Developer" width="100%" /></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Robotic%20Arms-7C3AED?style=for-the-badge" alt="Robotic Arms" />
+  <img src="https://img.shields.io/badge/Embedded%20Software-0D9488?style=for-the-badge" alt="Embedded Software" />
+  <img src="https://img.shields.io/badge/System%20Integration-2563EB?style=for-the-badge" alt="System Integration" />
+</p>
+<p align="center"><strong>🤖 Robotics Developer</strong><br />🎓 SCAU Undergraduate &nbsp; · &nbsp; 🌱 AgroTech-SCAU Lead</p>
+<p align="center">
+  <a href="https://kaede-rei.github.io/"><img src="https://img.shields.io/badge/Website-6366F1?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Website" /></a>
+  <a href="mailto:kaerei86@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Gmail" /></a>
+  <a href="https://github.com/AgroTech-SCAU"><img src="https://img.shields.io/badge/AgroTech%20SCAU-0D9488?style=flat-square&amp;logo=github&amp;logoColor=white" alt="AgroTech SCAU" /></a>
+</p>
 
-[中文](README_zh.md) | **English**
+## 👋 About Me
 
-> SCAU Undergraduate | Robotics & Embedded Systems Developer | AgroTech-SCAU Lead
+I develop robotic-arm software, embedded control systems, and robot integration frameworks, with hands-on work in agricultural robotics and real hardware. My work spans models, drivers, and control through calibration, task orchestration, and deployment.
 
-> Building reusable robot systems from **MCU-level control** to **robot manipulation**, **ROS integration**, and **real-world deployment**
+I aim to turn implementations for individual robots into general-purpose cores, portable modules, and reusable interfaces that future projects can build on.
 
-I am an undergraduate student at South China Agricultural University, working on robotics systems for agricultural and real-world applications
+## 🚀 Featured Work
 
-My current work focuses on:
+These projects pursue **general-purpose architectures, portability, and reuse across robot projects**. They span my personal and AgroTech-SCAU repositories, where I lead development or contribute as a primary code author.
 
-- embedded control and robot hardware interfaces
-- serial manipulator control, kinematics, and dynamics
-- ROS and MoveIt manipulation systems
-- robot calibration and RGB-D perception integration
-- teleoperation and real-robot data collection
-- agricultural mobile manipulation
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Kaede-Rei/SerialArm-Core">🦾 SerialArm-Core</a></h3>
+<p><img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square" alt="C++17" /> <img src="https://img.shields.io/badge/Dynamics%20Core-7C3AED?style=flat-square" alt="Dynamics Core" /></p>
+<p>Building a general-purpose, extensible C++17 dynamics core for serial manipulators, separating rigid-body dynamics, gravity compensation, and calibration from specific robot models, actuator backends, and upper-level frameworks.</p>
+<p>Robot profiles and shared hardware interfaces support adaptation to different arms, with impedance/admittance control, Python bindings, and ROS 2 / ros2_control / MoveIt 2 integration. SerialArm Studio provides model, calibration, control, and diagnostic workflows. Linux packages are available in <a href="https://github.com/Kaede-Rei/SerialArm-Core/releases">Releases</a>.</p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/Competition-Robot-2026-Atlas">🤖 Atlas</a></h3>
+<p><img src="https://img.shields.io/badge/STM32-03234B?style=flat-square" alt="STM32" /> <img src="https://img.shields.io/badge/Swerve%20%2B%205--DOF%20Arm-0D9488?style=flat-square" alt="Swerve + 5-DOF Arm" /></p>
+<p>An embedded software baseline already iterated and reused across multiple wheeled competition robots, with continued work on portability and adaptation through configuration. It covers <strong>swerve-drive chassis control, five-axis arm motion control, RC receiver integration, and leader–follower teleoperation</strong>.</p>
+<p>My work refines reusable boundaries around MCU drivers, communication, kinematics, scheduling, state machines, control authority, and faults to support different robot configurations. I also implemented the YASMIN mission state machine.</p>
+<p>Atlas is retained as an archived baseline, with code carried forward into <a href="https://github.com/AgroTech-SCAU/Competition-Robot-2026-Longinus">Longinus</a> and related Competition-Robot-2026 projects.</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard">⚙️ Embedded Control SDK</a></h3>
+<p><img src="https://img.shields.io/badge/MCU%20SDK-0D9488?style=flat-square" alt="MCU SDK" /> <img src="https://img.shields.io/badge/Drivers%20%26%20Architecture-334155?style=flat-square" alt="Drivers &amp; Architecture" /></p>
+<p>A shared MCU SDK developed with portability across projects and MCU platforms as a design goal, separating drivers, utilities, and kinematics from specific HALs, boards, and application logic.</p>
+<p>Platform interfaces, project-side assembly, and layered boundaries let new devices and boards connect through adapters, while shared conventions cover timeouts, stops, and fault handling.</p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/AgroTech-SCAU/AT-System-Integration">🧩 AT-System-Integration</a></h3>
+<p><img src="https://img.shields.io/badge/HSM%20%2B%20Behavior%20Tree-2563EB?style=flat-square" alt="HSM + Behavior Tree" /> <img src="https://img.shields.io/badge/Developing-B45309?style=flat-square" alt="Developing" /></p>
+<p>Building a general-purpose integration framework for different robots and tasks. Shared capability interfaces and adapters connect manipulation, vision, navigation, and embedded backends, reducing task logic's dependence on any single project's implementation.</p>
+<p>ATIL Robot Studio provides visual state orchestration, behavior-tree task design, and runtime diagnostics. Under active development, with capability-level mocks and an existing behavior-tree execution path; hardware integration progresses through project-specific validation.</p>
+</td>
+</tr>
+</table>
 
-I am also one of the main leads of [AgroTech-SCAU](https://github.com/AgroTech-SCAU), where I mainly work on embedded control, robotic-arm systems, robot integration, engineering standards, and project organization
+## 🖥️ Tools in Action
 
-My goal is to build robot software that is not only demonstrable, but also reusable, testable, and deployable on real hardware
-
----
-
-## 🔬 Current Work
-
-My current work is organized around four connected layers of a real robot system
-
-### ⚙️ Embedded Control & Robot Hardware
-
-I develop MCU-side control systems and hardware interfaces for mobile robots, robotic arms, and actuators, including:
-
-- motor and actuator control
-- CAN and serial communication
-- IMU and wheel-odometry processing
-- MCU-side local pose estimation
-- simple IMU + odometry based navigation on blank maps
-- hierarchical state machines
-- manual / autonomous control arbitration
-- emergency stop, timeout, and fault protection
-- MCU–Linux communication
-
-### 🦾 Serial Manipulator Control
-
-I am developing reusable control infrastructure for custom serial manipulators, including:
-
-- robot model abstraction
-- joint and actuator mapping
-- forward and inverse kinematics
-- rigid-body dynamics
-- gravity compensation
-- hardware abstraction
-- CAN / serial transport
-- safety and command validation
-- ROS 2 / ros2_control integration
-- MoveIt 2 integration
-
-My current main platform for this work is [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)
-
-### 🍅 Robot Manipulation & Agricultural Robotics
-
-On top of the robot-control layer, I work on real manipulation applications such as:
-
-- tomato harvesting
-- end-effector control
-- RGB-D perception integration
-- Planning Scene construction
-- hand–eye and multi-camera calibration
-- robotic-arm motion planning
-- base–arm system integration
-- compliant leaf manipulation experiments
-
-The current ROS 2 application stack is being developed in [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2)
-
-### 🧠 Teleoperation & Learning-Based Manipulation
-
-I am also exploring learning-based robot manipulation through:
-
-- leader–follower teleoperation
-- dual-arm teleoperation
-- real-robot dataset collection
-- LeRobot
-- imitation learning
-- simulation experiments
-- learned manipulation policies
-
-This direction is currently experimental and complements, rather than replaces, the classical robot-control stack
-
-> **Scope note on mobile navigation:**
-> 
-> My personal work on mobile navigation has mainly been MCU-side IMU / wheel-odometry processing, local pose estimation, and simple blank-map navigation
-> 
-> SLAM, global localization, and the ROS 2 / Nav2 navigation stack used in team platforms are primarily developed by other team members and are not presented here as my personal implementation
-
----
-
-## 📌 Project Map
-
-My repositories are organized around two parts: my personal robotics projects and the systems I develop or lead within [AgroTech-SCAU](https://github.com/AgroTech-SCAU)
-
-### 🚀 Main Personal Projects
-
-| Project                                                                           | Area                         | Current Role                                                                                                                                      |
-| --------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SerialArm-Core](https://github.com/Kaede-Rei/SerialArm-Core)                     | Robot Control Infrastructure | Portable C++17 control, dynamics, safety, hardware abstraction, communication, and framework-adapter core for custom serial manipulators          |
-| [Tomato-Picker-ROS2](https://github.com/Kaede-Rei/Tomato-Picker-ROS2)             | Agricultural Manipulation    | ROS 2 + MoveIt 2 tomato-picking application stack built on SerialArm-Core, covering motion, end-effector, perception, task, and deployment layers |
-| [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot)           | Embodied Manipulation        | Dual-arm teleoperation, real-robot dataset collection, LeRobot integration, imitation learning, and policy deployment experiments                 |
-| [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools)             | Robot Calibration            | GUI tools for eye-in-hand, eye-to-hand, and camera-to-camera calibration                                                                          |
-| [Tomato-Push-Aside-Leaves](https://github.com/Kaede-Rei/Tomato-Push-Aside-Leaves) | Agricultural Manipulation    | Ongoing research on compliant leaf manipulation, active perception, and manipulation under occlusion                                              |
-
-### 🌱 AgroTech-SCAU Projects
-
-These repositories are developed or led by me as part of [AgroTech-SCAU](https://github.com/AgroTech-SCAU), covering mobile robots, dual-arm systems, embedded infrastructure, and reusable robotics engineering standards
-
-| Project                                                                                                       | Area                          | My Work                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Steering-Wheel-Chassis](https://github.com/AgroTech-SCAU/Steering-Wheel-Chassis)                             | Mobile Robot                  | MCU-side chassis control, motor control, IMU and wheel-odometry processing, local pose estimation, simple blank-map navigation, state machines, safety logic, MCU–Linux communication, and complete vehicle integration |
-| [Tea-Picking-Dual-Arm](https://github.com/AgroTech-SCAU/Tea-Picking-Dual-Arm)                                 | Dual-Arm Robotics             | Dual-arm tea-picking platform, leader–follower teleoperation, arm communication and control integration, dual-arm coordination, and real-robot demonstration / data-collection infrastructure                           |
-| [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis)               | Mobile Robot                  | Wheel–rail integrated mobile platform, embedded motion control, actuator integration, communication, and system-level control prototype                                                                                 |
-| [Embedded-Electronic-Control-Standard](https://github.com/AgroTech-SCAU/Embedded-Electronic-Control-Standard) | Embedded Infrastructure       | Reusable embedded architecture, driver / SDK organization, communication interfaces, safety mechanisms, coding conventions, and engineering standards for robot projects                                                |
-| [Robotic-Arm-Motion-Control-Standard](https://github.com/AgroTech-SCAU/Robotic-Arm-Motion-Control-Standard)   | Robot Software Infrastructure | Reusable robotic-arm software architecture covering hardware interfaces, motion-control organization, ROS integration, project structure, and engineering conventions                                                   |
-
-> **Contribution boundary for mobile navigation**
->
-> My work on `Steering-Wheel-Chassis` focuses on the embedded and system-integration layers, including IMU / odometry processing, local pose estimation, and simple MCU-side blank-map navigation
->
-> The LiDAR SLAM, global localization, path planning, and ROS 2 / Nav2 navigation components contained in the complete team platform are developed by other team members and are not presented as my personal implementation
-
-### 🔧 Supporting & Previous Projects
+<table>
+<tr><th width="50%"><a href="https://github.com/Kaede-Rei/SerialArm-Core">🦾 SerialArm Studio</a></th><th width="50%"><a href="https://github.com/AgroTech-SCAU/AT-System-Integration">🧩 ATIL Robot Studio</a></th></tr>
+<tr><td><a href="assets/serialarm-studio-dynamics.png"><img src="assets/serialarm-studio-dynamics.png" alt="Calibration and validation workbench for the dynamics core" width="100%" /></a></td><td><a href="assets/atil-robot-studio-orchestration.png"><img src="assets/atil-robot-studio-orchestration.png" alt="AT-System-Integration · Visual state and task orchestration" width="100%" /></a></td></tr>
+<tr><td align="center"><sub>Calibration and validation workbench for the dynamics core</sub></td><td align="center"><sub>AT-System-Integration · Visual state and task orchestration</sub></td></tr>
+</table>
 
 <details>
-<summary><strong>Show supporting and previous projects</strong></summary>
+<summary>📐 Handeye Calibration Workbench</summary>
 
-<br>
-
-| Project                                                                         | Reference Value                                                                                          |
-| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2)                   | Earlier MoveIt 2 integration, reachable-pose evaluation, and robotic-arm motion-planning experiments     |
-| [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm)                   | MCU-side robotic-arm kinematics, CAN motor control, communication, and HFSM implementation               |
-| [Multi-Arm-Controller](https://github.com/Kaede-Rei/Multi-Arm-Controller)       | Multi-arm planning interfaces and reachable-pose search prototype                                        |
-| [Lift-Gripper-Controller](https://github.com/Kaede-Rei/Lift-Gripper-Controller) | Embedded lift and gripper controller with motor control, PID, CAN communication, and HFSM                |
-| [Tomato-Picker-PiPER](https://github.com/Kaede-Rei/Tomato-Picker-PiPER)         | Earlier ROS 1 tomato-harvesting system with MoveIt, RGB-D perception, point clouds, and GUI task control |
-| [Tomato-Picker-DM](https://github.com/Kaede-Rei/Tomato-Picker-DM)               | Earlier DM robotic-arm tomato-picking system and ROS 1 → ROS 2 migration reference                       |
-| [Visial-Robotic-Arm-Car](https://github.com/Kaede-Rei/Visial-Robotic-Arm-Car)   | Early integrated visual mobile-manipulation prototype                                                    |
-| [Embedded-About](https://github.com/Kaede-Rei/Embedded-About)                   | Archive and index of earlier embedded-system projects                                                    |
+<p align="center"><a href="https://raw.githubusercontent.com/AgroTech-SCAU/Handeye-Calibration-App/main/docs/images/launcher-connect.png"><img src="https://raw.githubusercontent.com/AgroTech-SCAU/Handeye-Calibration-App/main/docs/images/launcher-connect.png" alt="Handeye Calibration — camera and robot data inputs" width="100%" /></a></p>
 
 </details>
 
-### 🛠️ Personal Infrastructure
+## 🗺️ Project Map
 
-<details>
-<summary><strong>Show personal infrastructure</strong></summary>
+Other representative projects where I lead development or contribute as a primary code author.
 
-<br>
+| Project | Focus & Main Contributions |
+| --- | --- |
+| 📐 [Handeye-Calibration-App](https://github.com/AgroTech-SCAU/Handeye-Calibration-App) | Visual hand–eye calibration: camera/robot inputs, synchronized sampling, solver diagnostics, and independent geometric validation |
+| 🍅 [Tomato-Manipulation](https://github.com/AgroTech-SCAU/Tomato-Manipulation) | Tomato-picking application built on SerialArm-Core: MoveIt 2 motion capabilities, end-effector control, RGB-D / Planning Scene integration, and picking tasks |
+| 🧠 [Dual-DM-Arm-LeRobot](https://github.com/Kaede-Rei/Dual-DM-Arm-LeRobot) | Dual-arm teleoperation, demonstration collection and processing, LeRobot hardware integration, imitation learning, and policy deployment experiments |
+| 🍃 [Tea-Picking-Dual-Arm](https://github.com/AgroTech-SCAU/Tea-Picking-Dual-Arm) | HX-10HM / RM65-B leader–follower systems: joint mapping, homing, gravity-compensation integration, and single-/dual-arm teleoperation |
+| ⚙️ [Wheel-Rail-Integrated-Chassis](https://github.com/AgroTech-SCAU/Wheel-Rail-Integrated-Chassis) | STM32H723 chassis control: four-wheel steering kinematics, motor communication, remote-control inputs, scheduling, and fault handling |
 
-| Project                                                                 | Role                                 |
-| ----------------------------------------------------------------------- | ------------------------------------ |
-| [kaede-rei.github.io](https://github.com/Kaede-Rei/kaede-rei.github.io) | Personal website and technical notes |
-| [Resume-Template](https://github.com/Kaede-Rei/Resume-Template)         | Résumé and document templates        |
+## 🧰 Technical Stacks
 
-</details>
+<p>
+  <img src="https://img.shields.io/badge/C-555555?style=flat-square&amp;logo=c&amp;logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&amp;logo=cplusplus&amp;logoColor=white" alt="C++17" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ROS%202-22314E?style=flat-square&amp;logo=ros&amp;logoColor=white" alt="ROS 2" />
+  <img src="https://img.shields.io/badge/MoveIt%202-7C3AED?style=flat-square" alt="MoveIt 2" />
+  <img src="https://img.shields.io/badge/ros2__control-2563EB?style=flat-square" alt="ros2_control" />
+  <img src="https://img.shields.io/badge/Pinocchio-059669?style=flat-square" alt="Pinocchio" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&amp;logo=opencv&amp;logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/LeRobot-B45309?style=flat-square&amp;logo=huggingface&amp;logoColor=white" alt="LeRobot" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&amp;logo=stmicroelectronics&amp;logoColor=white" alt="STM32" />
+  <img src="https://img.shields.io/badge/CAN%20Bus-0D9488?style=flat-square" alt="CAN Bus" />
+  <img src="https://img.shields.io/badge/Linux-334155?style=flat-square&amp;logo=linux&amp;logoColor=white" alt="Linux" />
+  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&amp;logo=cmake&amp;logoColor=white" alt="CMake" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
+</p>
 
----
 
-## 🧰 Tech Stack
-
-### 💻 Programming Languages
-
-![C](https://img.shields.io/badge/-C-000000?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-5C3EE8?style=flat-square&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust)
-
-### ⚙️ Embedded Systems
-
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square\&logo=stmicroelectronics\&logoColor=white)
-![Renesas](https://img.shields.io/badge/-Renesas-CC0000?style=flat-square)
-![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=flat-square)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square)
-![CAN](https://img.shields.io/badge/-CAN%20Bus-00599C?style=flat-square)
-![RTOS](https://img.shields.io/badge/-RTOS-5C3EE8?style=flat-square)
-![LVGL](https://img.shields.io/badge/-LVGL-FF6F00?style=flat-square)
-![Vision](https://img.shields.io/badge/-Embedded%20Vision-5C3EE8?style=flat-square)
-![PCB](https://img.shields.io/badge/-PCB%20Design-00599C?style=flat-square)
-
-### 🤖 Robotics & Control
-
-![ROS](https://img.shields.io/badge/ROS-Noetic%20%7C%20Humble-22314E?style=flat-square\&logo=ros\&logoColor=white)
-![MoveIt](https://img.shields.io/badge/MoveIt-Motion_Planning-blueviolet?style=flat-square)
-![ros2\_control](https://img.shields.io/badge/ros2__control-Hardware_Interface-blue?style=flat-square)
-![Pinocchio](https://img.shields.io/badge/Pinocchio-Dynamics-green?style=flat-square)
-![RViz](https://img.shields.io/badge/-RViz-22314E?style=flat-square)
-![Gazebo](https://img.shields.io/badge/-Gazebo-2C3E50?style=flat-square)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=flat-square\&logo=opencv\&logoColor=white)
-![LeRobot](https://img.shields.io/badge/-🤗%20LeRobot-E7352C?style=flat-square)
-
-### 🧪 Tools & Platforms
-
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=flat-square\&logo=ubuntu\&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square\&logo=cmake\&logoColor=white)
-![Colcon](https://img.shields.io/badge/colcon-ROS2_Build-blue?style=flat-square)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat-square\&logo=git\&logoColor=white)
-![Qt](https://img.shields.io/badge/Qt-GUI-41CD52?style=flat-square\&logo=qt\&logoColor=white)
-
-### ⏳ Still Learning...
-![Isaac](https://img.shields.io/badge/-NVIDIA%20Isaac-76B900?style=flat-square&logo=nvidia&logoColor=white)
-
----
+- **🦾 Robotic arms:** kinematics and rigid-body dynamics (Pinocchio), model and dynamics calibration, joint control and gravity compensation, ROS 2 / MoveIt 2, hand–eye calibration, and RGB-D integration; exploring teleoperation, demonstrations, and imitation learning
+- **⚙️ Embedded software:** STM32, CAN / UART / SPI, actuator and IMU interfaces, swerve-drive and five-axis arm control, RC inputs and teleoperation, IMU/odometry processing, local pose estimation, PID, hierarchical state machines, control authority, timeouts, and faults
+- **🧩 System integration:** Linux and ROS 2, MCU–host communication, coordinate frames and interface contracts, task state machines and behavior trees, configuration, diagnostics, and deployment
 
 ## 🌱 AgroTech-SCAU
 
-I am one of the main leads of [AgroTech-SCAU](https://github.com/AgroTech-SCAU)
+As one of the association's leads, I combine hands-on development with technical coordination: project architecture, shared infrastructure, module interfaces, integration and debugging, engineering standards, documentation, and technical guidance.
 
-My main responsibilities include:
+I also study mechanics, computer vision, and mobile navigation to support system-level decisions and collaboration across the team. My main development focus remains robotic arms, embedded software, and system integration.
 
-- embedded control architecture
-- MCU firmware and robot hardware interfaces
-- robotic-arm motion-control systems
-- CAN / serial communication architecture
-- robot system integration
-- engineering standards and reusable infrastructure
-- project architecture and technical mentoring
+<details>
+<summary>🗃️ Earlier Work & Learning</summary>
 
-For mobile robot platforms, my work is mainly concentrated on the lower control and integration layers:
+- [Renesas-DM-Arm](https://github.com/Kaede-Rei/Renesas-DM-Arm): earlier MCU arm kinematics, CAN motor control, and state-machine work
+- [DM-Arm-MoveIt2](https://github.com/Kaede-Rei/DM-Arm-MoveIt2): MoveIt 2 integration and arm motion-planning experiments
+- [Hand-Eye-GUI-Tools](https://github.com/Kaede-Rei/Hand-Eye-GUI-Tools): ROS Noetic hand–eye and multi-camera extrinsic calibration tools
+- [Modern-Robotics-Curriculum](https://github.com/Kaede-Rei/Modern-Robotics-Curriculum): AI-assisted personal robotics study materials and teaching experiments
 
-```text
-motors / encoders / IMU
-        ↓
-MCU real-time control
-        ↓
-IMU + odometry processing
-        ↓
-local pose / blank-map navigation
-        ↓
-communication bridge
-        ↓
-upper-level robot system
-```
+</details>
 
-The complete team platforms may also contain LiDAR SLAM, localization, global planning, Nav2, and other navigation components
+## 📊 Development Activity
 
-Those components are developed collaboratively within the team and not my personal implementation
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&amp;show_icons=true&amp;rank_icon=github&amp;role=OWNER%2CORGANIZATION_MEMBER%2CCOLLABORATOR&amp;include_all_commits=true&amp;hide=contribs&amp;show=contributions&amp;line_height=20&amp;card_width=450&amp;custom_title=Development%20Stats&amp;bg_color=0D1117&amp;title_color=C4B5FD&amp;text_color=C9D1D9&amp;icon_color=2DD4BF&amp;border_color=30363D" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&amp;show_icons=true&amp;rank_icon=github&amp;role=OWNER%2CORGANIZATION_MEMBER%2CCOLLABORATOR&amp;include_all_commits=true&amp;hide=contribs&amp;show=contributions&amp;line_height=20&amp;card_width=450&amp;custom_title=Development%20Stats&amp;bg_color=F8FAFC&amp;title_color=6D28D9&amp;text_color=334155&amp;icon_color=0D9488&amp;border_color=E2E8F0" alt="GitHub development statistics" width="100%" />
+</picture>
+</td>
+<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&amp;layout=compact&amp;langs_count=6&amp;card_width=450&amp;custom_title=Public%20Repo%20Languages&amp;bg_color=0D1117&amp;title_color=C4B5FD&amp;text_color=C9D1D9&amp;icon_color=2DD4BF&amp;border_color=30363D" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&amp;layout=compact&amp;langs_count=6&amp;card_width=450&amp;custom_title=Public%20Repo%20Languages&amp;bg_color=F8FAFC&amp;title_color=6D28D9&amp;text_color=334155&amp;icon_color=0D9488&amp;border_color=E2E8F0" alt="Public repository language distribution" width="100%" />
+</picture>
+</td>
+</tr>
+</table>
 
----
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaede-Rei&amp;theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaede-Rei&amp;theme=github" alt="GitHub profile and contribution summary" width="100%" />
+</picture>
+</p>
 
-## 📊 GitHub Stats
+## 📫 Get in Touch
 
-<div align="center">
-    <a href="https://github.com/stats-organization/github-stats-extended">
-      <img alt="Kaede-Rei's Github Stats" src="https://github-stats-extended.vercel.app/api?username=Kaede-Rei&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=fff&title_color=00E676&icon_color=00E676" height="192px"/>
-    </a>
-    <a href="https://github.com/stats-organization/github-stats-extended">
-        <img alt="Kaede-Rei's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kaede-Rei&langs_count=8&layout=compact&theme=default&hide_border=true&bg_color=fff&title_color=000" height="192px"/>
-    </a>
-</div>
+<p align="center">
+  <a href="https://kaede-rei.github.io/"><img src="https://img.shields.io/badge/Website-6366F1?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Website" /></a>
+  <a href="mailto:kaerei86@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Gmail" /></a>
+  <a href="https://github.com/AgroTech-SCAU"><img src="https://img.shields.io/badge/AgroTech%20SCAU-0D9488?style=flat-square&amp;logo=github&amp;logoColor=white" alt="AgroTech SCAU" /></a>
+</p>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kaede-Rei&theme=react-dark&hide_border=true" alt="Contribution Graph" style="width: 100%;"/>
-</div>
+<p align="center"><a href="mailto:kaerei@foxmail.com">Alternative: kaerei@foxmail.com</a></p>
 
----
-
-## 📫 Contact
-
-* GitHub: [Kaede-Rei](https://github.com/Kaede-Rei)
-* Blog: [kaede-rei.github.io](https://kaede-rei.github.io/)
-* Email: [kaerei86@gmail.com](mailto:kaerei86@gmail.com)
-* Email: [kaerei@foxmail.com](mailto:kaerei@foxmail.com)
-
----
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0%3A0F172A%2C55%3A6D28D9%2C100%3A0D9488&amp;height=75&amp;section=footer" alt="Profile footer" width="100%" />
